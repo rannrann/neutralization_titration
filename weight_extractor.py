@@ -19,7 +19,8 @@ class weight_extractor:
         self.shakeOrNot = np.zeros(self.weight_array.size)
         self.deltas = []
         self.deltas_indexes = []
-        self.weight_array_filtered = None #original array without shaking
+        self.weight_array_over_zero = None #original array without shaking
+        self.weight_array_over_threshold = None
 
     def drawGraph(self, x, y):
         plt.plot(x, y)
@@ -37,62 +38,82 @@ class weight_extractor:
         '''
         Whenever the element is negative, the operator is definitely shaking the wide-mouth jar.
         '''
-        self.weight_array_filtered = self.weight_array[self.weight_array > 0]
+        self.weight_array_over_zero = self.weight_array[self.weight_array > 0]
         indexes_less_than_zero = np.where(self.weight_array < 0 )[0]
-        print(indexes_less_than_zero)
-        for index in indexes_less_than_zero:
-            self.shakeOrNot[index] = 1
+        self.shakeOrNot[indexes_less_than_zero] = 1
 
     def deltasCreator(self):
         '''
+        need to be canceled
         used to calculate the delta between the two adjacent elements.
         return deltas list and the elements indexes
         e.q. deltas:[3]
             deltas_indexes: [[0,1]]
             The delta is 3 between the first element(index 0) and the second element(index 1)
         '''
-        assert self.weight_array_filtered is not None
-        for i in range(1, self.weight_array_filtered.size):
-            self.deltas.append(self.weight_array_filtered[i] - self.weight_array_filtered[i - 1])
+        assert self.weight_array_over_zero is not None
+        self.deltas = np.diff(self.weight_array_over_zero)
+        for i in range(1, self.weight_array_over_zero.size):
             self.deltas_indexes.append([i-1, i])
-        self.deltas = np.array(self.deltas)
         self.deltas_indexes = np.array(self.deltas_indexes)
-        return self.deltas, self.deltas_indexes
 
-    def __deltasUpdate(self, index):
+    def __deltasUpdate(self):
         '''
         when the element from the deltas over the threshold, the associated indexes need to be updated 
         '''
-        assert index < self.deltas.size
-        assert self.deltas_indexes is not None
-        for i in range(index, self.deltas.size - 1):
-            if i != index:
-                self.deltas_indexes[i] = [self.deltas_indexes[i][0] + 1, self.deltas_indexes[i][1] + 1]
-            else:
-                self.shakeOrNot[self.deltas_indexes[i][1]] = 1
-                self.deltas_indexes[i] = [self.deltas_indexes[i][0], self.deltas_indexes[i][1] + 1]
+        # print("index = ",index, ", deltas.size = ", self.deltas.size)
+
+        # assert index <= self.deltas.size
+        # assert self.deltas_indexes is not None
+        # for i in range(index, self.deltas.size - 1):
+        #     if i != index:
+        #         self.deltas_indexes[i] = [self.deltas_indexes[i][0] + 1, self.deltas_indexes[i][1] + 1]
+        #     else:
+        #         self.shakeOrNot[self.deltas_indexes[i][1]] = 1
+        #         self.deltas_indexes[i] = [self.deltas_indexes[i][0], self.deltas_indexes[i][1] + 1]
                 
-            self.deltas[i] = self.weight_array_filtered[self.deltas_indexes[i][1]] - self.weight_array_filtered[self.deltas_indexes[i][0]]
-        self.deltas = self.deltas[:-1]
-        self.deltas_indexes = self.deltas_indexes[:-1, :]
+        #     self.deltas[i] = self.weight_array_filtered[self.deltas_indexes[i][1]] - self.weight_array_filtered[self.deltas_indexes[i][0]]
+        # self.deltas = self.deltas[:-1]
+        # self.deltas_indexes = self.deltas_indexes[:-1, :]
+        
+        indexes_deltas_update = np.where(self.shakeOrNot == 0)[0]
+        weight_array_filtered = self.weight_array[indexes_deltas_update]
+        self.deltas = np.diff(weight_array_filtered)
+        self.deltas_indexes = []
+        for i in range(1, indexes_deltas_update.size):
+            self.deltas_indexes.append([indexes_deltas_update[i-1], indexes_deltas_update[i]])
 
-        # return self.deltas, self.deltas_indexes
 
 
-    def isDeltasOverThreshold(self, threshold = -0.1):
+        
+    def deleteTheElementWithDiffUnderThreshold(self, threshold = -0.1):
         '''
+        replace to the function isDeltasOverThreshold and __deltasUpdate
         Check if all the deltas is less than threshold. 
-        If any, there is the data closing to shake. the delta and the indexes need to be updated
+        If any, there is the data closing to shake. the delta and the indexes need to be updated   
         '''
         assert self.deltas is not None
-        closeToShake = 0
-        threshold = -0.1
-        while closeToShake < self.deltas.size:
-            if self.deltas[closeToShake] < threshold : 
-                self.__deltasUpdate(closeToShake)
-            closeToShake += 1
-        # return self.deltas, self.deltas_indexes
+        while True:
+            indexes_to_remove = np.where(self.deltas <= threshold)[0] #let's say original array has n elements. the deltas will have n-1 elements
+
+            if len(indexes_to_remove) == 0:
+                break
+
+
+            temp = np.zeros(self.deltas.size)
+            temp[indexes_to_remove] = 1
+                
+            for i in range(1, self.deltas.size):
+                if temp[i] == 1:
+                    if temp[i-1] == 1:
+                        self.shakeOrNot[self.deltas_indexes[i][0]] = 1
+                    self.shakeOrNot[self.deltas_indexes[i][1]] = 1
         
+            # self.deltas = np.delete(self.deltas, indexes_to_remove)
+            # self.deltas_indexes = np.delete(self.deltas_indexes, indexes_to_remove)
+            
+            self.__deltasUpdate()
+
 
     def extractedWeightWithoutShaking(self):
         '''
@@ -100,14 +121,10 @@ class weight_extractor:
         the function returns the indexes without shaking
         '''
         assert self.deltas is not None
-        assert self.weight_array_filtered is not None
-        filter_indexes = []
-        for index in self.deltas_indexes:
-            filter_indexes.append(index[0])
-            filter_indexes.append(index[1])
-        filter_indexes = set(filter_indexes)
-        filter_indexes = np.array(list(filter_indexes))
-        self.weight_array_filtered = self.weight_array_filtered[filter_indexes]
+        assert self.weight_array_over_zero is not None
+        index_without_shaking = np.where(self.shakeOrNot == 0)[0]
+        self.weight_array_over_threshold  = self.weight_array[index_without_shaking]
+
             
 
 
