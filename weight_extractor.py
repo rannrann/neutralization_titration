@@ -71,6 +71,8 @@ class weight_extractor:
                 data_series = pd.Series(self.weight_array_over_zero)
                 rolling_mean = data_series.rolling(window=window_size).mean()
                 rolling_std = data_series.rolling(window=window_size).std()
+                print(f"The mean is {rolling_mean: .2f}")
+                print(f"The std is {rolling_std: .2f}")
 
                 best_threshold = 1
                 min_anomalies_count = len(data_series)
