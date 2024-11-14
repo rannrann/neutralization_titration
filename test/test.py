@@ -1,12 +1,11 @@
 import pandas as pd
 
-# 创建一个示例 DataFrame
-data = {'col1': ['a', 'b', 'c'], 'col2': [1, 2, 3]}
+data = [i for i in range(50)]
+interval = [5, 10, 23, 24, 44, 50]
+drip_index = []
 
-df = pd.DataFrame(data)
-
-# 确保索引是默认的整数索引
-print(df.index)
-
-# 保存为 CSV 文件，不写入索引
-df.to_csv('output.csv', index=False)
+for i in range(0, len(interval), 2):
+    #print("i = ", i, ", i+1 = ", i+1 )
+    for j in range(interval[i]+1, interval[i+1] + 1):
+        drip_index.append(j)
+print(drip_index)

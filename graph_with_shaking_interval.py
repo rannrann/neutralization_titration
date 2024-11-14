@@ -5,6 +5,11 @@ import json
 
 class graph_with_shaking_interval():
     def __init__(self, data_file, anomalies_indexes_file, shaking_interval_file):
+        '''
+        data_file: 重量数据文件
+        anomalies_indexes_file: 摇晃锥形瓶期间的数据
+        shaking_interval_file: 拿起和放下锥形瓶的时间点
+        '''
         self.data_file = data_file
         df = pd.read_csv(self.data_file, header=None)
         filtered_df = df.iloc[1:, :5]
@@ -16,12 +21,9 @@ class graph_with_shaking_interval():
 
         with open(self.anomalies_indexes_file, 'r') as file:
             self.anomalies_indexes = list(dict.fromkeys(json.load(file)))
-        print("before deleting: ", len(self.anomalies_indexes))
 
         with open(shaking_interval_file, 'r') as file:
             self.interval_indexes = list(dict.fromkeys(json.load(file)))
-        print("the length:", len(self.interval_indexes))
-        print(self.interval_indexes)
 
         self.data_file, self.anomalies_indexes = self.revise_abnormous_data()
 
@@ -32,7 +34,17 @@ class graph_with_shaking_interval():
         self.data = [float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]
         self.graph_with_shaking_interval2()
     
+
     def revise_abnormous_data(self):
+        '''
+        目的：处理既是间隔点又是异常点的数据; 为摇晃锥形瓶期间赋值假的重量数据，该数据为最近的锥形瓶重量
+        既是间隔点又是异常点的数据将会被赋值为就近的非异常数据
+        同时该异常点会被删除
+        更新异常点的记录文件为stored_data_xxx_revised.json
+
+        为摇晃锥形瓶期间赋值假的重量数据，该数据为最近的锥形瓶重量
+        更新重量数据的记录文件为xxx_revised.csv
+        '''
         index_loc = {}
         for i in range(len(self.interval_indexes)):
             e = self.interval_indexes[i]
@@ -52,29 +64,39 @@ class graph_with_shaking_interval():
                     self.anomalies_indexes.remove(index)
                     self.data[index] = self.data[revised_index]
                     break
-        print("after deleting: ", len(self.anomalies_indexes))
+        
 
         new_anomalies_indexes_file = self.anomalies_indexes_file[:-5] + '_revised' + self.anomalies_indexes_file[-5:]
         with open(new_anomalies_indexes_file, 'w') as file:
             json.dump(self.anomalies_indexes, file)
 
-        prev_y = -10
-        start_x = None
+            
 
-        for i in range(0, len(self.data)):
-            if i not in self.anomalies_indexes:
-                if start_x == None:
-                    if prev_y > self.data[i]:
-                        self.data[i] = prev_y
+        #解决数据递减的问题 
+        indices_to_adjust = []
+        for i in range(0, len(self.interval_indexes), 2):
+            for j in range(self.interval_indexes[i]+1, self.interval_indexes[i+1]+1):
+                indices_to_adjust.append(j)
+        prev_y = -1
+        for i in range(len(self.data)):
+            if i not in indices_to_adjust:
+                if prev_y < self.data[i]:
                     prev_y = self.data[i]
-                    if i in self.interval_indexes:
-                        if start_x == None:
-                            start_x = i 
-                else:
-                    self.data[i] = prev_y
-                    if i in self.interval_indexes:
-                        start_x = None
+                if prev_y > self.data[i]:
+                    self.data[i]  = prev_y
+            else:
+                continue
+        # pad the data within the interval
+        for i in range(0, len(self.interval_indexes), 2):
+            start_x = self.interval_indexes[i]
+            end_x = self.interval_indexes[i + 1] if i + 1 < len(self.interval_indexes) else len(self.data) - 1
+            prev_y = self.data[start_x] 
 
+            # Set all points within the interval to prev_y
+            for j in range(start_x, end_x + 1):
+                self.data[j] = prev_y  # Fill interval with prev_y
+
+        
         df = pd.read_csv(self.data_file)
         df.iloc[:1+len(self.data), 4] = self.data
         new_data_file = self.data_file[:-4] + '_revised' + self.data_file[-4:]
@@ -98,21 +120,15 @@ class graph_with_shaking_interval():
                 prev_y = self.data[start_x]  # 使用起点的 y 值作为水平线的 y 值
 
                 # 绘制水平红线
-                self.horizontal_lines.append((start_x + 0.5, end_x - 0.5, prev_y))
+                self.horizontal_lines.append((start_x, end_x, prev_y))
 
                 # 将前一根红线的终点与这一根红线的起点相连
-                blue_lines.append((previous_end, (start_x + 0.5, prev_y)))
+                blue_lines.append((previous_end, (start_x, prev_y)))
                 # 更新 previous_end 为当前红线的终点
-                previous_end = (end_x - 0.5, prev_y)
+                previous_end = (end_x, prev_y)
 
         # 使用 Plotly 绘图
         fig = go.Figure()
-
-        # 添加清理后的数据，保留原始索引
-        # fig.add_trace(go.Scatter(x=list(range(len(self.data))), y=cleaned_data,
-        #                          mode='lines+markers',  # 显示点和线
-        #                          marker=dict(size=6),  # 设置点的大小
-        #                          name='Cleaned Data'))
 
         # 添加红色水平线
         for start, end, y in self.horizontal_lines:
