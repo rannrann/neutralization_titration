@@ -80,6 +80,9 @@ class DashApp:
         )
         def display_click_data(clickData, n_clicks, stored_data, y_min, y_max, y_interval, x_min, x_max, x_interval):
             """点击事件的回调函数"""
+            '''
+            注意：加入到interval中的坐标并不是摇晃区间，而是在天秤上的点
+            '''
             fig = go.Figure()
 
             # 确保 stored_data 是字典
