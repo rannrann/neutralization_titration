@@ -25,6 +25,7 @@ class feature_matrix():
                 Weight Change
             '''
             self.data = None
+
             self.start_time = None
             self.end_time = None
             self.duration = None
@@ -77,7 +78,9 @@ class feature_matrix():
         self.total_weight_change = 0
 
         self.segments = [] 
+        self.segment_objs = []
         self.global_parameters = []
+        self.segment_parameters = []
         
         '''
         The range for splitting the whole event into multiple events based on shaking
@@ -96,7 +99,7 @@ class feature_matrix():
         
         '''
         
-        self.segment_objs = []
+        self.segments = []
         
         # get origin weight data
         df = pd.read_csv(data_file, header=None)
@@ -119,7 +122,7 @@ class feature_matrix():
             if i + 2 < len(self.interval_indexes):
                 self.segments.append([self.interval_indexes[i], self.interval_indexes[i + 2], self.interval_indexes[i + 1]])
         self.segments.append([self.interval_indexes[-2], self.interval_indexes[-1], self.interval_indexes[-1]])
-        
+
         # data normalization
         min_val = min(self.data)
         max_val = max(self.data)
@@ -128,26 +131,58 @@ class feature_matrix():
 
         # print("interval indexes: ", self.interval_indexes)
         # print("segments: ", self.segments)
-        self.create_segments()
+        self.segment_parameters = np.array(self.create_segments())
+
 
         self.first_stop = self.interval_indexes[0]
         self.last_stop = self.interval_indexes[-2]
 
         self.total_weight_change = self.data[self.last_stop] - self.data[self.first_stop]
+
+        '''
         
+        The First Stop
+            The Last Stop
+            Total Duration
+            Mean of Mean Gradient
+            Max of Max Gradient
+            Total Weight Change
+        '''
+
+        self.global_parameters = np.array([self.first_stop, self.last_stop, self.total_duration, self.mean_of_mean_gradient,
+                                 self.max_of_max_gradient, self.total_weight_change])
+  
+        for segment_parameter in self.segment_parameters:
+            segment_parameter_array = np.array(segment_parameter)  # Ensure it's a numpy array
+            
+            # Concatenate global and segment parameters
+            combined_parameters = np.concatenate((self.global_parameters, segment_parameter_array))
+            print(combined_parameters)
+
+        
+
 
         
     def create_segments(self):
         mean_gradient = []
         max_gradient = []
-        for segment in self.segments:
-            data_for_segment = self.data[segment[0]: segment[1] + 1]
-            segment_obj = self.local_parameters(data_for_segment, segment)
+        ret = []
+        
+        for segment_obj in self.segments:
+            data_for_segment = self.data[segment_obj[0]: segment_obj[1] + 1]
+            segment_obj = self.local_parameters(data_for_segment, segment_obj)
             self.segment_objs.append(segment_obj)
             mean_gradient.append(segment_obj.mean_gradient)
             max_gradient.append(segment_obj.max_gradient)
         self.mean_of_mean_gradient = np.mean(mean_gradient)
         self.max_of_max_gradient = np.max(max_gradient)
+  
+        
+        for segment_obj in self.segment_objs:
+            ret.append([segment_obj.start_time, segment_obj.end_time, segment_obj.duration, 
+                    segment_obj.shaking_duration, segment_obj.mean_gradient, segment_obj.max_gradient,
+                    segment_obj.weight_change])
+        return ret
 
 
 
