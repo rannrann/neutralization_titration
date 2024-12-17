@@ -6,6 +6,10 @@ import numpy as np
 import json
 
 class DashApp:
+    '''
+    选择标准：一定要把明显是摇晃阶段的数据选上
+    样本间明显高于或是低于周围数值的数据选上
+    '''
     def __init__(self, x, y, file_path):
         # 初始化 Dash 应用
         self.app = dash.Dash(__name__)
@@ -122,10 +126,10 @@ class DashApp:
 # 创建 DashApp 实例并运行
 if __name__ == '__main__':
     import pandas as pd
-    df = pd.read_csv('files/一回目.csv', header = None)
+    df = pd.read_csv('files/十四回目.csv', header = None)
     filtered_df = df.iloc[1:, :5]
     y = np.array([float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]) 
     x = np.array([i for i in range(len(y))])
-    file_path = "dataset/stored_data_first.json"
+    file_path = "dataset/stored_data14.json"
     dash_app = DashApp(x, y, file_path)  # 创建类实例
     dash_app.run()

@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import json
+from scipy.stats import skew, kurtosis
 
 class feature_matrix():
     
@@ -52,7 +53,7 @@ class feature_matrix():
 
             
     
-    def __init__(self, data_file, shaking_interval_file):
+    def __init__(self, data_file, shaking_interval_file, nth):
         '''
         Global Parameters:
             The First Stop
@@ -61,6 +62,8 @@ class feature_matrix():
             Mean of Mean Gradient
             Max of Max Gradient
             Total Weight Change
+            Skewness
+            Kurtosis
         
 
         For local paramenters:
@@ -76,12 +79,21 @@ class feature_matrix():
         self.mean_of_mean_gradient = None
         self.max_of_max_gradient = None
         self.total_weight_change = 0
+        self.skewness = 0
+        self.kurtosis = 0
 
         self.segments = [] 
         self.segment_objs = []
         self.global_parameters = []
         self.segment_parameters = []
-        
+        self.features = []
+        self.feature_names = [
+            "first_stop", "last_stop", "total_duration", "mean_of_mean_gradient",
+            "max_of_max_gradient", "total_weight_change", "skewness", "kurtosis", 
+            "start_time", "end_time", "duration", "shaking_duration", "mean_gradient", "max_gradient", "weight_change"
+        ]
+        self.nth = nth
+
         '''
         The range for splitting the whole event into multiple events based on shaking
         Use these timestamps to define segments:
@@ -139,27 +151,23 @@ class feature_matrix():
 
         self.total_weight_change = self.data[self.last_stop] - self.data[self.first_stop]
 
-        '''
         
-        The First Stop
-            The Last Stop
-            Total Duration
-            Mean of Mean Gradient
-            Max of Max Gradient
-            Total Weight Change
-        '''
+        self.skewness = skew(self.data)
+        self.kurtosis = kurtosis(self.data, fisher=True) 
 
         self.global_parameters = np.array([self.first_stop, self.last_stop, self.total_duration, self.mean_of_mean_gradient,
-                                 self.max_of_max_gradient, self.total_weight_change])
+                                 self.max_of_max_gradient, self.total_weight_change, self.skewness, self.kurtosis])
   
         for segment_parameter in self.segment_parameters:
             segment_parameter_array = np.array(segment_parameter)  # Ensure it's a numpy array
             
             # Concatenate global and segment parameters
             combined_parameters = np.concatenate((self.global_parameters, segment_parameter_array))
-            print(combined_parameters)
-
-        
+            self.features.append(combined_parameters)
+        self.features = np.array(self.features)
+        df = pd.DataFrame(self.features, columns = self.feature_names)
+        output_file_name = "model/features/extracted_features" + str(self.nth) +".json"
+        df.to_json(output_file_name, orient="records", indent=4)
 
 
         
@@ -185,10 +193,11 @@ class feature_matrix():
         return ret
 
 
-
-
-data_file = 'files/二回目_revised.csv'
-shaking_interval_file = 'dataset/shaking_interval_second.json'
-fm = feature_matrix(data_file, shaking_interval_file)
-        
+list1 = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二', '十三', '十四']
+list2 = range(1, 15)
+for nth, i in zip(list1, list2):
+    data_file = 'files/'+ nth +'回目_revised.csv'
+    shaking_interval_file = 'dataset/shaking_interval' + str(i) + '.json'
+    fm = feature_matrix(data_file, shaking_interval_file, i)
+            
 

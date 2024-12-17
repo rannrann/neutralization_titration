@@ -39,8 +39,8 @@ def graph_with_original_index(data_file, anomalies_indexes_file):
     # 显示图表
     fig.show()
 
-data_file = 'files/一回目_revised.csv'
-anomalies_indexes_file = 'dataset/stored_data_first_revised.json'
+data_file = 'files/一回目.csv'
+anomalies_indexes_file = 'dataset/stored_data_first.json'
 graph_with_original_index(data_file, anomalies_indexes_file)
 
 

@@ -158,8 +158,8 @@ class graph_with_shaking_interval():
 
 
 # 使用示例
-data_file = 'files/三回目.csv'
-anomalies_indexes_file = 'dataset/stored_data_third.json'
-shaking_interval_file = 'dataset/shaking_interval_third.json'
+data_file = 'files/十四回目.csv'
+anomalies_indexes_file = 'dataset/stored_data14.json'
+shaking_interval_file = 'dataset/shaking_interval14.json'
 
 g = graph_with_shaking_interval(data_file, anomalies_indexes_file, shaking_interval_file)

@@ -28,11 +28,11 @@ def drawGraph(x, y):
     # 显示图形
     plt.show()
 # 数据
-df = pd.read_csv('files/一回目.csv', header = None)
+df = pd.read_csv('files/七回目.csv', header = None)
 filtered_df = df.iloc[1:, :5]
 data = [float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]
 
-with open('dataset/stored_data_first.json', 'r') as file:
+with open('dataset/stored_data_seventh.json', 'r') as file:
     anomalies_indexes = json.load(file)
 
 data = np.array(data)
