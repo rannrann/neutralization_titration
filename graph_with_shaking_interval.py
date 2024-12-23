@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import json
-
+import re
 class graph_with_shaking_interval():
     def __init__(self, data_file, anomalies_indexes_file, shaking_interval_file):
         '''
@@ -151,15 +151,22 @@ class graph_with_shaking_interval():
             yaxis_title='Data Value',
             template='plotly_white'
         )
-
-        fig.write_html('graph/'+self.data_file[6:9]+'.html')
+        file_name_pattern = r'sample[0-9]*'
+        file_name = re.findall(file_name_pattern, self.data_file)
+        file_name = file_name[0]
+        fig.write_html('graph/' + file_name + '.html')
         # 显示图表
         fig.show()
 
 
 # 使用示例
-data_file = 'files/十四回目.csv'
-anomalies_indexes_file = 'dataset/stored_data14.json'
-shaking_interval_file = 'dataset/shaking_interval14.json'
 
+# for i in range(15, 25):
+#     data_file = 'files/sample' + str(i) + '.csv'
+#     anomalies_indexes_file = 'dataset/stored_data' + str(i) + '.json'
+#     shaking_interval_file = 'dataset/shaking_interval'+ str(i) + '.json'
+#     g = graph_with_shaking_interval(data_file, anomalies_indexes_file, shaking_interval_file)
+data_file = 'files/sample15.csv'
+anomalies_indexes_file = 'dataset/stored_data15.json'
+shaking_interval_file = 'dataset/shaking_interval15.json'
 g = graph_with_shaking_interval(data_file, anomalies_indexes_file, shaking_interval_file)

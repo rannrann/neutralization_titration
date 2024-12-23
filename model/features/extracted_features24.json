@@ -1,0 +1,36 @@
+[
+    {
+        "first_stop":14.0,
+        "last_stop":30.0,
+        "total_duration":16.0,
+        "mean_of_mean_gradient":0.0,
+        "max_of_max_gradient":0.0,
+        "total_weight_change":0.0,
+        "skewness":-2.0189947882,
+        "kurtosis":2.7215198529,
+        "start_time":14.0,
+        "end_time":30.0,
+        "duration":17.0,
+        "shaking_duration":12.0,
+        "mean_gradient":0.0,
+        "max_gradient":0.0,
+        "weight_change":0.0
+    },
+    {
+        "first_stop":14.0,
+        "last_stop":30.0,
+        "total_duration":16.0,
+        "mean_of_mean_gradient":0.0,
+        "max_of_max_gradient":0.0,
+        "total_weight_change":0.0,
+        "skewness":-2.0189947882,
+        "kurtosis":2.7215198529,
+        "start_time":30.0,
+        "end_time":35.0,
+        "duration":6.0,
+        "shaking_duration":6.0,
+        "mean_gradient":0.0,
+        "max_gradient":0.0,
+        "weight_change":0.0
+    }
+]

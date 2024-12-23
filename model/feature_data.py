@@ -193,10 +193,9 @@ class feature_matrix():
         return ret
 
 
-list1 = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二', '十三', '十四']
-list2 = range(1, 15)
-for nth, i in zip(list1, list2):
-    data_file = 'files/'+ nth +'回目_revised.csv'
+
+for i in range(15,25):
+    data_file = 'files/sample'+ str(i) +'_revised.csv'
     shaking_interval_file = 'dataset/shaking_interval' + str(i) + '.json'
     fm = feature_matrix(data_file, shaking_interval_file, i)
             

@@ -49,6 +49,6 @@ def aggregated_features(file_name, index):
     print(final_df)
 
 
-for i in range(1, 15):
+for i in range(15, 25):
     file_name = 'model/features/extracted_features' + str(i) + '.json'
     aggregated_features(file_name, i)
