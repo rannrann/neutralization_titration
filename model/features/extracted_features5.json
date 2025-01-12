@@ -1,19 +1,12 @@
 [
     {
-        "first_stop":21.0,
-        "last_stop":21.0,
-        "total_duration":22.0,
+        "absolute_time_point":0.9545454545,
+        "absolute_change":0.9565217391,
         "mean_of_mean_gradient":0.0,
         "max_of_max_gradient":0.0,
-        "total_weight_change":0.0,
         "skewness":-1.3188188162,
         "kurtosis":0.2949570399,
-        "start_time":21.0,
-        "end_time":43.0,
-        "duration":23.0,
-        "shaking_duration":23.0,
         "mean_gradient":0.0,
-        "max_gradient":0.0,
-        "weight_change":0.0
+        "max_gradient":0.0
     }
 ]

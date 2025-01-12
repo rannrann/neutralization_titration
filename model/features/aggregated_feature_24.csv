@@ -1,2 +1,2 @@
-first_stop,last_stop,total_duration,mean_of_mean_gradient,max_of_max_gradient,total_weight_change,skewness,kurtosis,duration_mean,duration_std,duration_min,duration_max,shaking_duration_mean,shaking_duration_std,shaking_duration_min,shaking_duration_max,mean_gradient_mean,mean_gradient_std,mean_gradient_min,mean_gradient_max,max_gradient_mean,max_gradient_std,max_gradient_min,max_gradient_max,weight_change_mean,weight_change_std,weight_change_min,weight_change_max
-14.0,30.0,16.0,0.0,0.0,0.0,-2.0189947882,2.7215198529,11.5,7.7781745930520225,6.0,17.0,9.0,4.242640687119285,6.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+absolute_time_point,absolute_change,mean_of_mean_gradient,max_of_max_gradient,skewness,kurtosis,mean_gradient_mean,mean_gradient_std,mean_gradient_min,mean_gradient_max,max_gradient_mean,max_gradient_std,max_gradient_min,max_gradient_max
+1.875,0.8888888889,0.0,0.0,-2.0189947882,2.7215198529,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

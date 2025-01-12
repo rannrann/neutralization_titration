@@ -11,7 +11,7 @@ def aggregated_features(file_name, index):
     df = pd.DataFrame(data)
 
     # Define the columns for aggregation
-    segment_features = ['duration', 'shaking_duration', 'mean_gradient', 'max_gradient', 'weight_change']
+    segment_features = ['mean_gradient', 'max_gradient']
 
     # Aggregate the segment features
     aggregated_features = df[segment_features].agg(['mean', 'std', 'min', 'max']).T
@@ -22,12 +22,10 @@ def aggregated_features(file_name, index):
 
     # Add global features
     global_features = [
-        df['first_stop'].iloc[0],
-        df['last_stop'].iloc[0],
-        df['total_duration'].iloc[0],
+        df['absolute_time_point'].iloc[0],
+        df['absolute_change'].iloc[0],
         df['mean_of_mean_gradient'].iloc[0],
         df['max_of_max_gradient'].iloc[0],
-        df['total_weight_change'].iloc[0],
         df['skewness'].iloc[0],  # Ensure skewness exists in the input JSON
         df['kurtosis'].iloc[0]   # Ensure kurtosis exists in the input JSON
     ]
@@ -36,8 +34,7 @@ def aggregated_features(file_name, index):
     final_features = np.concatenate([global_features, flattened_aggregated])
 
     # Convert to a DataFrame for a consistent dataset
-    feature_columns = ['first_stop', 'last_stop', 'total_duration', 'mean_of_mean_gradient',
-                       'max_of_max_gradient', 'total_weight_change', 'skewness', 'kurtosis']
+    feature_columns = ['absolute_time_point','absolute_change' , 'mean_of_mean_gradient','max_of_max_gradient', 'skewness', 'kurtosis']
     feature_columns += [f'{col}_{stat}' for col in segment_features for stat in ['mean', 'std', 'min', 'max']]
 
     final_df = pd.DataFrame([final_features], columns=feature_columns)
@@ -49,6 +46,6 @@ def aggregated_features(file_name, index):
     print(final_df)
 
 
-for i in range(15, 25):
+for i in range(1, 25):
     file_name = 'model/features/extracted_features' + str(i) + '.json'
     aggregated_features(file_name, i)

@@ -1,0 +1,12 @@
+----------------------------------Model Evaluation----------------------------------------
+Best Parameters: {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 2}
+Best Accuracy from Grid Search: 0.80
+
+Training Accuracy: 0.91
+Testing Accuracy: 0.67
+Generalization Gap: 0.24
+Potential overfitting detected.
+
+Cross-Validation Scores: [0.3333333333333333, 1.0, 0.6666666666666666, 1.0, 1.0]
+Mean CV Accuracy: 0.80
+Model saved to: model/model/trained_model_decisiontree_4_parameters_11_samples.joblib

@@ -16,38 +16,38 @@ class feature_matrix():
             '''
             Features for Each Segment:
                 Data
-                Start Time
-                End Time
-                Duration 
+                Start Time(deleted)
+                End Time(deleted)
+                Duration(deleted)
                 Shaking Duration 
-                Shaking Percent
+                Shaking Percent(deleted)
                 Mean Gradient
                 Max Gradient
-                Weight Change
+                Weight Change(deleted)
             '''
             self.data = None
 
-            self.start_time = None
-            self.end_time = None
-            self.duration = None
+            # self.start_time = None
+            # self.end_time = None
+            # self.duration = None
             self.shaking_duration = None
-            self.shaking_percent = None
+            #self.shaking_percent = None
             self.mean_gradient = None
             self.max_gradient = None
-            self.weight_change = None
+            #self.weight_change = None
 
             self.data = data
-            self.start_time = segment[0]
-            self.end_time = segment[1]
-            self.duration = segment[1] - segment[0] + 1
+            #self.start_time = segment[0]
+            #self.end_time = segment[1]
+            #self.duration = segment[1] - segment[0] + 1
             self.shaking_duration = segment[2] - segment[0] + 1
             # print("duration: ", self.duration)
             # print("shaking duration: ", self.shaking_duration)
 
-            self.shaking_percent = self.shaking_duration / self.duration
+            #self.shaking_percent = self.shaking_duration / self.duration
             self.mean_gradient = np.mean(np.gradient(self.data))
             self.max_gradient = max(np.gradient(self.data))
-            self.weight_change = self.data[len(self.data) - 1] - self.data[0]
+            #self.weight_change = self.data[len(self.data) - 1] - self.data[0]
             # print("weight change: ", self.weight_change)
 
 
@@ -56,12 +56,15 @@ class feature_matrix():
     def __init__(self, data_file, shaking_interval_file, nth):
         '''
         Global Parameters:
-            The First Stop
-            The Last Stop
+            First Stop(deleted)
+            Last Stop
             Total Duration
-            Mean of Mean Gradient
+            Total shaking Duration 
+            Absolute time point = Last stop / Total Duration
+            Absolute change = Total Duration / Total Shaking Duration
+            Mean of Mean Gradient 
             Max of Max Gradient
-            Total Weight Change
+            Total Weight Change (deleted)
             Skewness
             Kurtosis
         
@@ -73,12 +76,17 @@ class feature_matrix():
         '''
         self.data = None
         self.interval_indexes = None
-        self.first_stop = None
+        #self.first_stop = None
         self.last_stop = None
         self.total_duration = 0
+        self.total_shaking_duration = 0
+
+        self.absolute_time_point = None
+        self.absolute_change = None
+
         self.mean_of_mean_gradient = None
         self.max_of_max_gradient = None
-        self.total_weight_change = 0
+        #self.total_weight_change = 0
         self.skewness = 0
         self.kurtosis = 0
 
@@ -87,10 +95,10 @@ class feature_matrix():
         self.global_parameters = []
         self.segment_parameters = []
         self.features = []
+   
         self.feature_names = [
-            "first_stop", "last_stop", "total_duration", "mean_of_mean_gradient",
-            "max_of_max_gradient", "total_weight_change", "skewness", "kurtosis", 
-            "start_time", "end_time", "duration", "shaking_duration", "mean_gradient", "max_gradient", "weight_change"
+            "absolute_time_point", "absolute_change", "mean_of_mean_gradient", "max_of_max_gradient", "skewness", "kurtosis", 
+            "mean_gradient", "max_gradient"
         ]
         self.nth = nth
 
@@ -111,7 +119,6 @@ class feature_matrix():
         
         '''
         
-        self.segments = []
         
         # get origin weight data
         df = pd.read_csv(data_file, header=None)
@@ -123,7 +130,7 @@ class feature_matrix():
             self.interval_indexes = list(dict.fromkeys(json.load(file)))
 
 
-        # Compute the total shaking duration
+        #Compute the total shaking duration
         for i in range(0, len(self.interval_indexes), 2):
             if i + 1 < len(self.interval_indexes):
                 self.total_duration += (self.interval_indexes[i+1] - self.interval_indexes[i])
@@ -143,20 +150,25 @@ class feature_matrix():
 
         # print("interval indexes: ", self.interval_indexes)
         # print("segments: ", self.segments)
-        self.segment_parameters = np.array(self.create_segments())
+        self.create_segments()
+        for segment_obj in self.segment_objs:
+            self.segment_parameters.append([segment_obj.mean_gradient, segment_obj.max_gradient])
+            self.total_shaking_duration += segment_obj.shaking_duration
 
-
-        self.first_stop = self.interval_indexes[0]
         self.last_stop = self.interval_indexes[-2]
 
-        self.total_weight_change = self.data[self.last_stop] - self.data[self.first_stop]
+
+        #self.total_weight_change = self.data[self.last_stop] - self.data[self.first_stop]
 
         
         self.skewness = skew(self.data)
         self.kurtosis = kurtosis(self.data, fisher=True) 
 
-        self.global_parameters = np.array([self.first_stop, self.last_stop, self.total_duration, self.mean_of_mean_gradient,
-                                 self.max_of_max_gradient, self.total_weight_change, self.skewness, self.kurtosis])
+
+        self.absolute_time_point = self.last_stop / self.total_duration
+        self.absolute_change = self.total_duration / self.total_shaking_duration
+
+        self.global_parameters = np.array([self.absolute_time_point, self.absolute_change, self.mean_of_mean_gradient, self.max_of_max_gradient, self.skewness, self.kurtosis])
   
         for segment_parameter in self.segment_parameters:
             segment_parameter_array = np.array(segment_parameter)  # Ensure it's a numpy array
@@ -185,16 +197,10 @@ class feature_matrix():
         self.mean_of_mean_gradient = np.mean(mean_gradient)
         self.max_of_max_gradient = np.max(max_gradient)
   
-        
-        for segment_obj in self.segment_objs:
-            ret.append([segment_obj.start_time, segment_obj.end_time, segment_obj.duration, 
-                    segment_obj.shaking_duration, segment_obj.mean_gradient, segment_obj.max_gradient,
-                    segment_obj.weight_change])
-        return ret
 
 
 
-for i in range(15,25):
+for i in range(1,25):
     data_file = 'files/sample'+ str(i) +'_revised.csv'
     shaking_interval_file = 'dataset/shaking_interval' + str(i) + '.json'
     fm = feature_matrix(data_file, shaking_interval_file, i)
