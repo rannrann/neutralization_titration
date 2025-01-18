@@ -1,0 +1,918 @@
+{
+    "global_features": {
+        "max_weight": 5.009,
+        "min_weight": 0.0,
+        "mean_weight": 4.418593333333333,
+        "std_weight": 1.2318343995337686,
+        "total_time": 149.0,
+        "average_growth_rate": 0.03359060402684564,
+        "state_ratios": {
+            "ST": 0.76,
+            "US": 0.24
+        },
+        "total_records": 150,
+        "state_switches": "33"
+    },
+    "local_features": [
+        {
+            "No.": 1,
+            "Timestamp": "2024-12-05 14:15:24",
+            "weight": 0.003,
+            "state": "US"
+        },
+        {
+            "No.": 2,
+            "Timestamp": "2024-12-05 14:15:25",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 3,
+            "Timestamp": "2024-12-05 14:15:26",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 4,
+            "Timestamp": "2024-12-05 14:15:27",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 5,
+            "Timestamp": "2024-12-05 14:15:28",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 6,
+            "Timestamp": "2024-12-05 14:15:29",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 7,
+            "Timestamp": "2024-12-05 14:15:30",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 8,
+            "Timestamp": "2024-12-05 14:15:31",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 9,
+            "Timestamp": "2024-12-05 14:15:32",
+            "weight": 1.827,
+            "state": "US"
+        },
+        {
+            "No.": 10,
+            "Timestamp": "2024-12-05 14:15:33",
+            "weight": 1.827,
+            "state": "ST"
+        },
+        {
+            "No.": 11,
+            "Timestamp": "2024-12-05 14:15:35",
+            "weight": 1.826,
+            "state": "ST"
+        },
+        {
+            "No.": 12,
+            "Timestamp": "2024-12-05 14:15:35",
+            "weight": 1.826,
+            "state": "ST"
+        },
+        {
+            "No.": 13,
+            "Timestamp": "2024-12-05 14:15:36",
+            "weight": 2.299,
+            "state": "US"
+        },
+        {
+            "No.": 14,
+            "Timestamp": "2024-12-05 14:15:37",
+            "weight": 3.218,
+            "state": "US"
+        },
+        {
+            "No.": 15,
+            "Timestamp": "2024-12-05 14:15:38",
+            "weight": 3.216,
+            "state": "ST"
+        },
+        {
+            "No.": 16,
+            "Timestamp": "2024-12-05 14:15:39",
+            "weight": 3.217,
+            "state": "ST"
+        },
+        {
+            "No.": 17,
+            "Timestamp": "2024-12-05 14:15:40",
+            "weight": 3.216,
+            "state": "ST"
+        },
+        {
+            "No.": 18,
+            "Timestamp": "2024-12-05 14:15:41",
+            "weight": 3.468,
+            "state": "US"
+        },
+        {
+            "No.": 19,
+            "Timestamp": "2024-12-05 14:15:42",
+            "weight": 3.745,
+            "state": "ST"
+        },
+        {
+            "No.": 20,
+            "Timestamp": "2024-12-05 14:15:44",
+            "weight": 3.76,
+            "state": "US"
+        },
+        {
+            "No.": 21,
+            "Timestamp": "2024-12-05 14:15:44",
+            "weight": 3.907,
+            "state": "ST"
+        },
+        {
+            "No.": 22,
+            "Timestamp": "2024-12-05 14:15:45",
+            "weight": 3.906,
+            "state": "ST"
+        },
+        {
+            "No.": 23,
+            "Timestamp": "2024-12-05 14:15:46",
+            "weight": 3.906,
+            "state": "ST"
+        },
+        {
+            "No.": 24,
+            "Timestamp": "2024-12-05 14:15:47",
+            "weight": 3.906,
+            "state": "ST"
+        },
+        {
+            "No.": 25,
+            "Timestamp": "2024-12-05 14:15:48",
+            "weight": 4.011,
+            "state": "US"
+        },
+        {
+            "No.": 26,
+            "Timestamp": "2024-12-05 14:15:49",
+            "weight": 4.109,
+            "state": "ST"
+        },
+        {
+            "No.": 27,
+            "Timestamp": "2024-12-05 14:15:50",
+            "weight": 4.213,
+            "state": "US"
+        },
+        {
+            "No.": 28,
+            "Timestamp": "2024-12-05 14:15:51",
+            "weight": 4.289,
+            "state": "ST"
+        },
+        {
+            "No.": 29,
+            "Timestamp": "2024-12-05 14:15:53",
+            "weight": 4.291,
+            "state": "ST"
+        },
+        {
+            "No.": 30,
+            "Timestamp": "2024-12-05 14:15:53",
+            "weight": 4.488,
+            "state": "US"
+        },
+        {
+            "No.": 31,
+            "Timestamp": "2024-12-05 14:15:54",
+            "weight": 4.489,
+            "state": "ST"
+        },
+        {
+            "No.": 32,
+            "Timestamp": "2024-12-05 14:15:55",
+            "weight": 4.485,
+            "state": "US"
+        },
+        {
+            "No.": 33,
+            "Timestamp": "2024-12-05 14:15:56",
+            "weight": 4.672,
+            "state": "US"
+        },
+        {
+            "No.": 34,
+            "Timestamp": "2024-12-05 14:15:57",
+            "weight": 4.678,
+            "state": "US"
+        },
+        {
+            "No.": 35,
+            "Timestamp": "2024-12-05 14:15:58",
+            "weight": 4.691,
+            "state": "US"
+        },
+        {
+            "No.": 36,
+            "Timestamp": "2024-12-05 14:15:59",
+            "weight": 4.689,
+            "state": "ST"
+        },
+        {
+            "No.": 37,
+            "Timestamp": "2024-12-05 14:16:00",
+            "weight": 4.69,
+            "state": "ST"
+        },
+        {
+            "No.": 38,
+            "Timestamp": "2024-12-05 14:16:02",
+            "weight": 4.691,
+            "state": "ST"
+        },
+        {
+            "No.": 39,
+            "Timestamp": "2024-12-05 14:16:02",
+            "weight": 4.691,
+            "state": "ST"
+        },
+        {
+            "No.": 40,
+            "Timestamp": "2024-12-05 14:16:03",
+            "weight": 4.691,
+            "state": "ST"
+        },
+        {
+            "No.": 41,
+            "Timestamp": "2024-12-05 14:16:04",
+            "weight": 4.691,
+            "state": "ST"
+        },
+        {
+            "No.": 42,
+            "Timestamp": "2024-12-05 14:16:05",
+            "weight": 4.69,
+            "state": "ST"
+        },
+        {
+            "No.": 43,
+            "Timestamp": "2024-12-05 14:16:06",
+            "weight": 4.761,
+            "state": "US"
+        },
+        {
+            "No.": 44,
+            "Timestamp": "2024-12-05 14:16:07",
+            "weight": 4.763,
+            "state": "US"
+        },
+        {
+            "No.": 45,
+            "Timestamp": "2024-12-05 14:16:08",
+            "weight": 4.767,
+            "state": "ST"
+        },
+        {
+            "No.": 46,
+            "Timestamp": "2024-12-05 14:16:09",
+            "weight": 4.777,
+            "state": "US"
+        },
+        {
+            "No.": 47,
+            "Timestamp": "2024-12-05 14:16:11",
+            "weight": 4.787,
+            "state": "US"
+        },
+        {
+            "No.": 48,
+            "Timestamp": "2024-12-05 14:16:11",
+            "weight": 4.8,
+            "state": "US"
+        },
+        {
+            "No.": 49,
+            "Timestamp": "2024-12-05 14:16:12",
+            "weight": 4.807,
+            "state": "US"
+        },
+        {
+            "No.": 50,
+            "Timestamp": "2024-12-05 14:16:13",
+            "weight": 4.807,
+            "state": "ST"
+        },
+        {
+            "No.": 51,
+            "Timestamp": "2024-12-05 14:16:14",
+            "weight": 4.807,
+            "state": "ST"
+        },
+        {
+            "No.": 52,
+            "Timestamp": "2024-12-05 14:16:16",
+            "weight": 4.808,
+            "state": "ST"
+        },
+        {
+            "No.": 53,
+            "Timestamp": "2024-12-05 14:16:16",
+            "weight": 4.809,
+            "state": "ST"
+        },
+        {
+            "No.": 54,
+            "Timestamp": "2024-12-05 14:16:17",
+            "weight": 4.821,
+            "state": "US"
+        },
+        {
+            "No.": 55,
+            "Timestamp": "2024-12-05 14:16:18",
+            "weight": 4.825,
+            "state": "ST"
+        },
+        {
+            "No.": 56,
+            "Timestamp": "2024-12-05 14:16:20",
+            "weight": 4.825,
+            "state": "ST"
+        },
+        {
+            "No.": 57,
+            "Timestamp": "2024-12-05 14:16:20",
+            "weight": 4.825,
+            "state": "ST"
+        },
+        {
+            "No.": 58,
+            "Timestamp": "2024-12-05 14:16:21",
+            "weight": 4.825,
+            "state": "ST"
+        },
+        {
+            "No.": 59,
+            "Timestamp": "2024-12-05 14:16:22",
+            "weight": 4.824,
+            "state": "ST"
+        },
+        {
+            "No.": 60,
+            "Timestamp": "2024-12-05 14:16:23",
+            "weight": 4.823,
+            "state": "ST"
+        },
+        {
+            "No.": 61,
+            "Timestamp": "2024-12-05 14:16:25",
+            "weight": 4.821,
+            "state": "ST"
+        },
+        {
+            "No.": 62,
+            "Timestamp": "2024-12-05 14:16:25",
+            "weight": 4.82,
+            "state": "ST"
+        },
+        {
+            "No.": 63,
+            "Timestamp": "2024-12-05 14:16:26",
+            "weight": 4.82,
+            "state": "ST"
+        },
+        {
+            "No.": 64,
+            "Timestamp": "2024-12-05 14:16:27",
+            "weight": 4.82,
+            "state": "ST"
+        },
+        {
+            "No.": 65,
+            "Timestamp": "2024-12-05 14:16:29",
+            "weight": 4.821,
+            "state": "ST"
+        },
+        {
+            "No.": 66,
+            "Timestamp": "2024-12-05 14:16:30",
+            "weight": 4.84,
+            "state": "US"
+        },
+        {
+            "No.": 67,
+            "Timestamp": "2024-12-05 14:16:30",
+            "weight": 4.854,
+            "state": "US"
+        },
+        {
+            "No.": 68,
+            "Timestamp": "2024-12-05 14:16:31",
+            "weight": 4.862,
+            "state": "US"
+        },
+        {
+            "No.": 69,
+            "Timestamp": "2024-12-05 14:16:33",
+            "weight": 4.883,
+            "state": "US"
+        },
+        {
+            "No.": 70,
+            "Timestamp": "2024-12-05 14:16:34",
+            "weight": 4.891,
+            "state": "US"
+        },
+        {
+            "No.": 71,
+            "Timestamp": "2024-12-05 14:16:34",
+            "weight": 4.899,
+            "state": "US"
+        },
+        {
+            "No.": 72,
+            "Timestamp": "2024-12-05 14:16:35",
+            "weight": 4.9,
+            "state": "US"
+        },
+        {
+            "No.": 73,
+            "Timestamp": "2024-12-05 14:16:36",
+            "weight": 4.907,
+            "state": "US"
+        },
+        {
+            "No.": 74,
+            "Timestamp": "2024-12-05 14:16:38",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 75,
+            "Timestamp": "2024-12-05 14:16:38",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 76,
+            "Timestamp": "2024-12-05 14:16:39",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 77,
+            "Timestamp": "2024-12-05 14:16:40",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 78,
+            "Timestamp": "2024-12-05 14:16:41",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 79,
+            "Timestamp": "2024-12-05 14:16:42",
+            "weight": 4.907,
+            "state": "ST"
+        },
+        {
+            "No.": 80,
+            "Timestamp": "2024-12-05 14:16:43",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 81,
+            "Timestamp": "2024-12-05 14:16:44",
+            "weight": 4.906,
+            "state": "ST"
+        },
+        {
+            "No.": 82,
+            "Timestamp": "2024-12-05 14:16:45",
+            "weight": 4.904,
+            "state": "ST"
+        },
+        {
+            "No.": 83,
+            "Timestamp": "2024-12-05 14:16:47",
+            "weight": 4.914,
+            "state": "US"
+        },
+        {
+            "No.": 84,
+            "Timestamp": "2024-12-05 14:16:48",
+            "weight": 4.924,
+            "state": "US"
+        },
+        {
+            "No.": 85,
+            "Timestamp": "2024-12-05 14:16:48",
+            "weight": 4.929,
+            "state": "US"
+        },
+        {
+            "No.": 86,
+            "Timestamp": "2024-12-05 14:16:49",
+            "weight": 4.932,
+            "state": "US"
+        },
+        {
+            "No.": 87,
+            "Timestamp": "2024-12-05 14:16:50",
+            "weight": 4.941,
+            "state": "US"
+        },
+        {
+            "No.": 88,
+            "Timestamp": "2024-12-05 14:16:52",
+            "weight": 4.944,
+            "state": "ST"
+        },
+        {
+            "No.": 89,
+            "Timestamp": "2024-12-05 14:16:52",
+            "weight": 4.955,
+            "state": "US"
+        },
+        {
+            "No.": 90,
+            "Timestamp": "2024-12-05 14:16:53",
+            "weight": 4.957,
+            "state": "ST"
+        },
+        {
+            "No.": 91,
+            "Timestamp": "2024-12-05 14:16:54",
+            "weight": 4.958,
+            "state": "ST"
+        },
+        {
+            "No.": 92,
+            "Timestamp": "2024-12-05 14:16:55",
+            "weight": 4.958,
+            "state": "ST"
+        },
+        {
+            "No.": 93,
+            "Timestamp": "2024-12-05 14:16:57",
+            "weight": 4.958,
+            "state": "ST"
+        },
+        {
+            "No.": 94,
+            "Timestamp": "2024-12-05 14:16:57",
+            "weight": 4.959,
+            "state": "ST"
+        },
+        {
+            "No.": 95,
+            "Timestamp": "2024-12-05 14:16:58",
+            "weight": 4.96,
+            "state": "ST"
+        },
+        {
+            "No.": 96,
+            "Timestamp": "2024-12-05 14:16:59",
+            "weight": 4.961,
+            "state": "ST"
+        },
+        {
+            "No.": 97,
+            "Timestamp": "2024-12-05 14:17:01",
+            "weight": 4.964,
+            "state": "ST"
+        },
+        {
+            "No.": 98,
+            "Timestamp": "2024-12-05 14:17:01",
+            "weight": 4.966,
+            "state": "ST"
+        },
+        {
+            "No.": 99,
+            "Timestamp": "2024-12-05 14:17:02",
+            "weight": 4.969,
+            "state": "US"
+        },
+        {
+            "No.": 100,
+            "Timestamp": "2024-12-05 14:17:03",
+            "weight": 4.972,
+            "state": "ST"
+        },
+        {
+            "No.": 101,
+            "Timestamp": "2024-12-05 14:17:04",
+            "weight": 4.976,
+            "state": "US"
+        },
+        {
+            "No.": 102,
+            "Timestamp": "2024-12-05 14:17:06",
+            "weight": 4.98,
+            "state": "ST"
+        },
+        {
+            "No.": 103,
+            "Timestamp": "2024-12-05 14:17:06",
+            "weight": 4.983,
+            "state": "ST"
+        },
+        {
+            "No.": 104,
+            "Timestamp": "2024-12-05 14:17:07",
+            "weight": 4.985,
+            "state": "ST"
+        },
+        {
+            "No.": 105,
+            "Timestamp": "2024-12-05 14:17:08",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 106,
+            "Timestamp": "2024-12-05 14:17:10",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 107,
+            "Timestamp": "2024-12-05 14:17:10",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 108,
+            "Timestamp": "2024-12-05 14:17:11",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 109,
+            "Timestamp": "2024-12-05 14:17:12",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 110,
+            "Timestamp": "2024-12-05 14:17:13",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 111,
+            "Timestamp": "2024-12-05 14:17:15",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 112,
+            "Timestamp": "2024-12-05 14:17:15",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 113,
+            "Timestamp": "2024-12-05 14:17:16",
+            "weight": 4.985,
+            "state": "ST"
+        },
+        {
+            "No.": 114,
+            "Timestamp": "2024-12-05 14:17:17",
+            "weight": 4.984,
+            "state": "ST"
+        },
+        {
+            "No.": 115,
+            "Timestamp": "2024-12-05 14:17:19",
+            "weight": 4.983,
+            "state": "ST"
+        },
+        {
+            "No.": 116,
+            "Timestamp": "2024-12-05 14:17:20",
+            "weight": 4.983,
+            "state": "ST"
+        },
+        {
+            "No.": 117,
+            "Timestamp": "2024-12-05 14:17:20",
+            "weight": 4.984,
+            "state": "ST"
+        },
+        {
+            "No.": 118,
+            "Timestamp": "2024-12-05 14:17:21",
+            "weight": 4.985,
+            "state": "ST"
+        },
+        {
+            "No.": 119,
+            "Timestamp": "2024-12-05 14:17:23",
+            "weight": 4.986,
+            "state": "ST"
+        },
+        {
+            "No.": 120,
+            "Timestamp": "2024-12-05 14:17:24",
+            "weight": 4.987,
+            "state": "ST"
+        },
+        {
+            "No.": 121,
+            "Timestamp": "2024-12-05 14:17:24",
+            "weight": 4.988,
+            "state": "ST"
+        },
+        {
+            "No.": 122,
+            "Timestamp": "2024-12-05 14:17:25",
+            "weight": 4.988,
+            "state": "ST"
+        },
+        {
+            "No.": 123,
+            "Timestamp": "2024-12-05 14:17:26",
+            "weight": 4.989,
+            "state": "ST"
+        },
+        {
+            "No.": 124,
+            "Timestamp": "2024-12-05 14:17:28",
+            "weight": 4.991,
+            "state": "ST"
+        },
+        {
+            "No.": 125,
+            "Timestamp": "2024-12-05 14:17:29",
+            "weight": 4.991,
+            "state": "ST"
+        },
+        {
+            "No.": 126,
+            "Timestamp": "2024-12-05 14:17:29",
+            "weight": 4.992,
+            "state": "ST"
+        },
+        {
+            "No.": 127,
+            "Timestamp": "2024-12-05 14:17:30",
+            "weight": 4.992,
+            "state": "ST"
+        },
+        {
+            "No.": 128,
+            "Timestamp": "2024-12-05 14:17:31",
+            "weight": 4.993,
+            "state": "ST"
+        },
+        {
+            "No.": 129,
+            "Timestamp": "2024-12-05 14:17:33",
+            "weight": 4.994,
+            "state": "ST"
+        },
+        {
+            "No.": 130,
+            "Timestamp": "2024-12-05 14:17:33",
+            "weight": 4.995,
+            "state": "ST"
+        },
+        {
+            "No.": 131,
+            "Timestamp": "2024-12-05 14:17:34",
+            "weight": 4.995,
+            "state": "ST"
+        },
+        {
+            "No.": 132,
+            "Timestamp": "2024-12-05 14:17:35",
+            "weight": 4.995,
+            "state": "ST"
+        },
+        {
+            "No.": 133,
+            "Timestamp": "2024-12-05 14:17:37",
+            "weight": 4.996,
+            "state": "ST"
+        },
+        {
+            "No.": 134,
+            "Timestamp": "2024-12-05 14:17:38",
+            "weight": 4.996,
+            "state": "ST"
+        },
+        {
+            "No.": 135,
+            "Timestamp": "2024-12-05 14:17:38",
+            "weight": 4.996,
+            "state": "ST"
+        },
+        {
+            "No.": 136,
+            "Timestamp": "2024-12-05 14:17:39",
+            "weight": 4.996,
+            "state": "ST"
+        },
+        {
+            "No.": 137,
+            "Timestamp": "2024-12-05 14:17:40",
+            "weight": 4.997,
+            "state": "ST"
+        },
+        {
+            "No.": 138,
+            "Timestamp": "2024-12-05 14:17:42",
+            "weight": 4.997,
+            "state": "ST"
+        },
+        {
+            "No.": 139,
+            "Timestamp": "2024-12-05 14:17:42",
+            "weight": 4.997,
+            "state": "ST"
+        },
+        {
+            "No.": 140,
+            "Timestamp": "2024-12-05 14:17:43",
+            "weight": 4.997,
+            "state": "ST"
+        },
+        {
+            "No.": 141,
+            "Timestamp": "2024-12-05 14:17:44",
+            "weight": 4.998,
+            "state": "ST"
+        },
+        {
+            "No.": 142,
+            "Timestamp": "2024-12-05 14:17:46",
+            "weight": 4.999,
+            "state": "ST"
+        },
+        {
+            "No.": 143,
+            "Timestamp": "2024-12-05 14:17:47",
+            "weight": 4.999,
+            "state": "ST"
+        },
+        {
+            "No.": 144,
+            "Timestamp": "2024-12-05 14:17:47",
+            "weight": 5.0,
+            "state": "ST"
+        },
+        {
+            "No.": 145,
+            "Timestamp": "2024-12-05 14:17:48",
+            "weight": 5.0,
+            "state": "ST"
+        },
+        {
+            "No.": 146,
+            "Timestamp": "2024-12-05 14:17:49",
+            "weight": 5.0,
+            "state": "ST"
+        },
+        {
+            "No.": 147,
+            "Timestamp": "2024-12-05 14:17:51",
+            "weight": 5.008,
+            "state": "ST"
+        },
+        {
+            "No.": 148,
+            "Timestamp": "2024-12-05 14:17:51",
+            "weight": 5.009,
+            "state": "ST"
+        },
+        {
+            "No.": 149,
+            "Timestamp": "2024-12-05 14:17:52",
+            "weight": 5.009,
+            "state": "ST"
+        },
+        {
+            "No.": 150,
+            "Timestamp": "2024-12-05 14:17:53",
+            "weight": 5.008,
+            "state": "ST"
+        }
+    ]
+}

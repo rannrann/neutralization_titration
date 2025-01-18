@@ -1,0 +1,252 @@
+{
+    "global_features": {
+        "max_weight": 5.152,
+        "min_weight": -0.001,
+        "mean_weight": 2.6870256410256412,
+        "std_weight": 2.1322792782320676,
+        "total_time": 38.0,
+        "average_growth_rate": 0.13492105263157894,
+        "state_ratios": {
+            "ST": 0.6666666666666666,
+            "US": 0.3333333333333333
+        },
+        "total_records": 39,
+        "state_switches": "15"
+    },
+    "local_features": [
+        {
+            "No.": 1,
+            "Timestamp": "2024-12-05 14:37:20",
+            "weight": 0.025,
+            "state": "US"
+        },
+        {
+            "No.": 2,
+            "Timestamp": "2024-12-05 14:37:21",
+            "weight": 0.003,
+            "state": "ST"
+        },
+        {
+            "No.": 3,
+            "Timestamp": "2024-12-05 14:37:22",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 4,
+            "Timestamp": "2024-12-05 14:37:22",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 5,
+            "Timestamp": "2024-12-05 14:37:24",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 6,
+            "Timestamp": "2024-12-05 14:37:25",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 7,
+            "Timestamp": "2024-12-05 14:37:26",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 8,
+            "Timestamp": "2024-12-05 14:37:27",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 9,
+            "Timestamp": "2024-12-05 14:37:27",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 10,
+            "Timestamp": "2024-12-05 14:37:29",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 11,
+            "Timestamp": "2024-12-05 14:37:30",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 12,
+            "Timestamp": "2024-12-05 14:37:31",
+            "weight": -0.001,
+            "state": "ST"
+        },
+        {
+            "No.": 13,
+            "Timestamp": "2024-12-05 14:37:31",
+            "weight": -0.001,
+            "state": "ST"
+        },
+        {
+            "No.": 14,
+            "Timestamp": "2024-12-05 14:37:33",
+            "weight": 1.819,
+            "state": "US"
+        },
+        {
+            "No.": 15,
+            "Timestamp": "2024-12-05 14:37:34",
+            "weight": 1.818,
+            "state": "ST"
+        },
+        {
+            "No.": 16,
+            "Timestamp": "2024-12-05 14:37:35",
+            "weight": 1.817,
+            "state": "ST"
+        },
+        {
+            "No.": 17,
+            "Timestamp": "2024-12-05 14:37:35",
+            "weight": 2.919,
+            "state": "US"
+        },
+        {
+            "No.": 18,
+            "Timestamp": "2024-12-05 14:37:36",
+            "weight": 2.906,
+            "state": "US"
+        },
+        {
+            "No.": 19,
+            "Timestamp": "2024-12-05 14:37:38",
+            "weight": 2.905,
+            "state": "ST"
+        },
+        {
+            "No.": 20,
+            "Timestamp": "2024-12-05 14:37:39",
+            "weight": 2.903,
+            "state": "ST"
+        },
+        {
+            "No.": 21,
+            "Timestamp": "2024-12-05 14:37:40",
+            "weight": 2.902,
+            "state": "ST"
+        },
+        {
+            "No.": 22,
+            "Timestamp": "2024-12-05 14:37:40",
+            "weight": 3.988,
+            "state": "US"
+        },
+        {
+            "No.": 23,
+            "Timestamp": "2024-12-05 14:37:42",
+            "weight": 4.066,
+            "state": "ST"
+        },
+        {
+            "No.": 24,
+            "Timestamp": "2024-12-05 14:37:43",
+            "weight": 4.306,
+            "state": "US"
+        },
+        {
+            "No.": 25,
+            "Timestamp": "2024-12-05 14:37:44",
+            "weight": 4.418,
+            "state": "US"
+        },
+        {
+            "No.": 26,
+            "Timestamp": "2024-12-05 14:37:44",
+            "weight": 4.43,
+            "state": "US"
+        },
+        {
+            "No.": 27,
+            "Timestamp": "2024-12-05 14:37:45",
+            "weight": 4.431,
+            "state": "ST"
+        },
+        {
+            "No.": 28,
+            "Timestamp": "2024-12-05 14:37:47",
+            "weight": 4.429,
+            "state": "ST"
+        },
+        {
+            "No.": 29,
+            "Timestamp": "2024-12-05 14:37:48",
+            "weight": 4.427,
+            "state": "ST"
+        },
+        {
+            "No.": 30,
+            "Timestamp": "2024-12-05 14:37:49",
+            "weight": 4.657,
+            "state": "US"
+        },
+        {
+            "No.": 31,
+            "Timestamp": "2024-12-05 14:37:49",
+            "weight": 4.666,
+            "state": "ST"
+        },
+        {
+            "No.": 32,
+            "Timestamp": "2024-12-05 14:37:51",
+            "weight": 4.955,
+            "state": "US"
+        },
+        {
+            "No.": 33,
+            "Timestamp": "2024-12-05 14:37:52",
+            "weight": 5.137,
+            "state": "ST"
+        },
+        {
+            "No.": 34,
+            "Timestamp": "2024-12-05 14:37:53",
+            "weight": 5.139,
+            "state": "US"
+        },
+        {
+            "No.": 35,
+            "Timestamp": "2024-12-05 14:37:53",
+            "weight": 5.131,
+            "state": "US"
+        },
+        {
+            "No.": 36,
+            "Timestamp": "2024-12-05 14:37:54",
+            "weight": 5.147,
+            "state": "US"
+        },
+        {
+            "No.": 37,
+            "Timestamp": "2024-12-05 14:37:56",
+            "weight": 5.149,
+            "state": "ST"
+        },
+        {
+            "No.": 38,
+            "Timestamp": "2024-12-05 14:37:57",
+            "weight": 5.151,
+            "state": "ST"
+        },
+        {
+            "No.": 39,
+            "Timestamp": "2024-12-05 14:37:58",
+            "weight": 5.152,
+            "state": "ST"
+        }
+    ]
+}

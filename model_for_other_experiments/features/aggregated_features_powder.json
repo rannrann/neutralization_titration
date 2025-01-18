@@ -1,0 +1,291 @@
+{
+    "aggregated_global_features": {
+        "overall_max_weight": 5.152,
+        "overall_min_weight": -0.186,
+        "overall_average_growth_rate": 0.07096429528081417,
+        "total_records": 1678,
+        "total_state_switches": "507"
+    },
+    "samples": [
+        {
+            "max_weight": 5.036,
+            "min_weight": 0.0,
+            "mean_weight": 2.1076756756756754,
+            "std_weight": 2.096763135596742,
+            "total_time": 74.0,
+            "average_growth_rate": 0.06804054054054054,
+            "state_ratios": {
+                "ST": 0.7702702702702703,
+                "US": 0.22972972972972974
+            },
+            "total_records": 74,
+            "state_switches": "16"
+        },
+        {
+            "max_weight": 5.0,
+            "min_weight": 0.0,
+            "mean_weight": 4.318546666666667,
+            "std_weight": 1.4271362491530137,
+            "total_time": 149.0,
+            "average_growth_rate": 0.03353020134228188,
+            "state_ratios": {
+                "ST": 0.82,
+                "US": 0.18
+            },
+            "total_records": 150,
+            "state_switches": "35"
+        },
+        {
+            "max_weight": 5.01,
+            "min_weight": -0.186,
+            "mean_weight": 3.8280754716981127,
+            "std_weight": 1.627503321322707,
+            "total_time": 106.0,
+            "average_growth_rate": 0.0490188679245283,
+            "state_ratios": {
+                "ST": 0.6226415094339622,
+                "US": 0.37735849056603776
+            },
+            "total_records": 106,
+            "state_switches": "33"
+        },
+        {
+            "max_weight": 5.06,
+            "min_weight": -0.004,
+            "mean_weight": 2.8142727272727277,
+            "std_weight": 2.099313478150763,
+            "total_time": 32.0,
+            "average_growth_rate": 0.15790625,
+            "state_ratios": {
+                "ST": 0.7878787878787878,
+                "US": 0.21212121212121213
+            },
+            "total_records": 33,
+            "state_switches": "11"
+        },
+        {
+            "max_weight": 5.01,
+            "min_weight": -0.011,
+            "mean_weight": 4.210752,
+            "std_weight": 1.523775466356828,
+            "total_time": 124.0,
+            "average_growth_rate": 0.040379032258064516,
+            "state_ratios": {
+                "ST": 0.776,
+                "US": 0.224
+            },
+            "total_records": 125,
+            "state_switches": "24"
+        },
+        {
+            "max_weight": 5.009,
+            "min_weight": 0.0,
+            "mean_weight": 4.418593333333333,
+            "std_weight": 1.2318343995337686,
+            "total_time": 149.0,
+            "average_growth_rate": 0.03359060402684564,
+            "state_ratios": {
+                "ST": 0.76,
+                "US": 0.24
+            },
+            "total_records": 150,
+            "state_switches": "33"
+        },
+        {
+            "max_weight": 5.021,
+            "min_weight": -0.156,
+            "mean_weight": 3.6702033898305078,
+            "std_weight": 1.932564445815376,
+            "total_time": 58.0,
+            "average_growth_rate": 0.08925862068965516,
+            "state_ratios": {
+                "ST": 0.6779661016949152,
+                "US": 0.3220338983050847
+            },
+            "total_records": 59,
+            "state_switches": "23"
+        },
+        {
+            "max_weight": 5.027,
+            "min_weight": -0.001,
+            "mean_weight": 3.7527682926829264,
+            "std_weight": 1.9234306240158463,
+            "total_time": 81.0,
+            "average_growth_rate": 0.06206172839506173,
+            "state_ratios": {
+                "ST": 0.6951219512195121,
+                "US": 0.3048780487804878
+            },
+            "total_records": 82,
+            "state_switches": "28"
+        },
+        {
+            "max_weight": 5.013,
+            "min_weight": -0.001,
+            "mean_weight": 3.564476190476191,
+            "std_weight": 1.9958352314412806,
+            "total_time": 104.0,
+            "average_growth_rate": 0.04819230769230769,
+            "state_ratios": {
+                "ST": 0.7238095238095238,
+                "US": 0.2761904761904762
+            },
+            "total_records": 105,
+            "state_switches": "35"
+        },
+        {
+            "max_weight": 5.02,
+            "min_weight": -0.001,
+            "mean_weight": 4.044230769230768,
+            "std_weight": 1.5478527642576922,
+            "total_time": 77.0,
+            "average_growth_rate": 0.0651948051948052,
+            "state_ratios": {
+                "ST": 0.6923076923076923,
+                "US": 0.3076923076923077
+            },
+            "total_records": 78,
+            "state_switches": "30"
+        },
+        {
+            "max_weight": 5.006,
+            "min_weight": -0.001,
+            "mean_weight": 3.4141076923076925,
+            "std_weight": 2.0645152209649975,
+            "total_time": 64.0,
+            "average_growth_rate": 0.07823437500000001,
+            "state_ratios": {
+                "ST": 0.8307692307692308,
+                "US": 0.16923076923076924
+            },
+            "total_records": 65,
+            "state_switches": "19"
+        },
+        {
+            "max_weight": 5.028,
+            "min_weight": -0.004,
+            "mean_weight": 3.3785999999999996,
+            "std_weight": 1.9342803650485225,
+            "total_time": 50.0,
+            "average_growth_rate": 0.10024,
+            "state_ratios": {
+                "ST": 0.56,
+                "US": 0.44
+            },
+            "total_records": 50,
+            "state_switches": "16"
+        },
+        {
+            "max_weight": 5.015,
+            "min_weight": -0.001,
+            "mean_weight": 3.7363571428571425,
+            "std_weight": 1.7862311715275394,
+            "total_time": 69.0,
+            "average_growth_rate": 0.07269565217391305,
+            "state_ratios": {
+                "ST": 0.6285714285714286,
+                "US": 0.37142857142857144
+            },
+            "total_records": 70,
+            "state_switches": "23"
+        },
+        {
+            "max_weight": 5.031,
+            "min_weight": -0.006,
+            "mean_weight": 4.012293333333333,
+            "std_weight": 1.6829893190177792,
+            "total_time": 74.0,
+            "average_growth_rate": 0.06790540540540539,
+            "state_ratios": {
+                "ST": 0.5733333333333334,
+                "US": 0.4266666666666667
+            },
+            "total_records": 75,
+            "state_switches": "26"
+        },
+        {
+            "max_weight": 5.047,
+            "min_weight": -0.017,
+            "mean_weight": 3.9308961038961034,
+            "std_weight": 1.757407058143029,
+            "total_time": 76.0,
+            "average_growth_rate": 0.06642105263157895,
+            "state_ratios": {
+                "ST": 0.5454545454545454,
+                "US": 0.45454545454545453
+            },
+            "total_records": 77,
+            "state_switches": "36"
+        },
+        {
+            "max_weight": 5.008,
+            "min_weight": -0.004,
+            "mean_weight": 4.288871794871795,
+            "std_weight": 1.251917257500929,
+            "total_time": 116.0,
+            "average_growth_rate": 0.04317241379310345,
+            "state_ratios": {
+                "ST": 0.7094017094017094,
+                "US": 0.2905982905982906
+            },
+            "total_records": 117,
+            "state_switches": "34"
+        },
+        {
+            "max_weight": 5.152,
+            "min_weight": -0.001,
+            "mean_weight": 2.6870256410256412,
+            "std_weight": 2.1322792782320676,
+            "total_time": 38.0,
+            "average_growth_rate": 0.13492105263157894,
+            "state_ratios": {
+                "ST": 0.6666666666666666,
+                "US": 0.3333333333333333
+            },
+            "total_records": 39,
+            "state_switches": "15"
+        },
+        {
+            "max_weight": 5.015,
+            "min_weight": -0.008,
+            "mean_weight": 4.200858695652173,
+            "std_weight": 1.5061257232048655,
+            "total_time": 94.0,
+            "average_growth_rate": 0.05325531914893617,
+            "state_ratios": {
+                "ST": 0.7065217391304348,
+                "US": 0.29347826086956524
+            },
+            "total_records": 92,
+            "state_switches": "30"
+        },
+        {
+            "max_weight": 5.018,
+            "min_weight": -0.002,
+            "mean_weight": 3.8647968749999997,
+            "std_weight": 1.8560020455284936,
+            "total_time": 63.0,
+            "average_growth_rate": 0.07955555555555555,
+            "state_ratios": {
+                "ST": 0.734375,
+                "US": 0.265625
+            },
+            "total_records": 64,
+            "state_switches": "18"
+        },
+        {
+            "max_weight": 5.005,
+            "min_weight": 0.002,
+            "mean_weight": 4.198865671641791,
+            "std_weight": 1.5784185593020514,
+            "total_time": 66.0,
+            "average_growth_rate": 0.07571212121212122,
+            "state_ratios": {
+                "ST": 0.6567164179104478,
+                "US": 0.34328358208955223
+            },
+            "total_records": 67,
+            "state_switches": "22"
+        }
+    ]
+}

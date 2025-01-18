@@ -126,10 +126,10 @@ class DashApp:
 # 创建 DashApp 实例并运行
 if __name__ == '__main__':
     import pandas as pd
-    df = pd.read_csv('files/sample15.csv', header = None)
+    df = pd.read_csv('files/sample2.csv', header = None)
     filtered_df = df.iloc[1:, :5]
     y = np.array([float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]) 
     x = np.array([i for i in range(len(y))])
-    output_file_path = "dataset/stored_data15.json"
+    output_file_path = "dataset/stored_data2.json"
     dash_app = DashApp(x, y, output_file_path)  # 创建类实例
     dash_app.run()

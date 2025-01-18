@@ -1,0 +1,162 @@
+{
+    "global_features": {
+        "max_weight": 9.823,
+        "min_weight": -0.008,
+        "mean_weight": 5.898666666666667,
+        "std_weight": 4.463231220487712,
+        "total_time": 23.0,
+        "average_growth_rate": 0.4273478260869565,
+        "state_ratios": {
+            "ST": 0.625,
+            "US": 0.375
+        },
+        "total_records": 24,
+        "state_switches": "4"
+    },
+    "local_features": [
+        {
+            "No.": 1,
+            "Timestamp": "2024-12-05 13:29:49",
+            "weight": -0.008,
+            "state": "ST"
+        },
+        {
+            "No.": 2,
+            "Timestamp": "2024-12-05 13:29:50",
+            "weight": -0.008,
+            "state": "ST"
+        },
+        {
+            "No.": 3,
+            "Timestamp": "2024-12-05 13:29:51",
+            "weight": -0.008,
+            "state": "ST"
+        },
+        {
+            "No.": 4,
+            "Timestamp": "2024-12-05 13:29:52",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 5,
+            "Timestamp": "2024-12-05 13:29:53",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 6,
+            "Timestamp": "2024-12-05 13:29:54",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 7,
+            "Timestamp": "2024-12-05 13:29:55",
+            "weight": 0.0,
+            "state": "ST"
+        },
+        {
+            "No.": 8,
+            "Timestamp": "2024-12-05 13:29:56",
+            "weight": 1.254,
+            "state": "US"
+        },
+        {
+            "No.": 9,
+            "Timestamp": "2024-12-05 13:29:57",
+            "weight": 3.198,
+            "state": "US"
+        },
+        {
+            "No.": 10,
+            "Timestamp": "2024-12-05 13:29:58",
+            "weight": 4.853,
+            "state": "US"
+        },
+        {
+            "No.": 11,
+            "Timestamp": "2024-12-05 13:29:59",
+            "weight": 6.947,
+            "state": "US"
+        },
+        {
+            "No.": 12,
+            "Timestamp": "2024-12-05 13:30:00",
+            "weight": 8.743,
+            "state": "US"
+        },
+        {
+            "No.": 13,
+            "Timestamp": "2024-12-05 13:30:01",
+            "weight": 9.249,
+            "state": "US"
+        },
+        {
+            "No.": 14,
+            "Timestamp": "2024-12-05 13:30:02",
+            "weight": 9.684,
+            "state": "US"
+        },
+        {
+            "No.": 15,
+            "Timestamp": "2024-12-05 13:30:03",
+            "weight": 9.712,
+            "state": "US"
+        },
+        {
+            "No.": 16,
+            "Timestamp": "2024-12-05 13:30:04",
+            "weight": 9.711,
+            "state": "ST"
+        },
+        {
+            "No.": 17,
+            "Timestamp": "2024-12-05 13:30:05",
+            "weight": 9.711,
+            "state": "ST"
+        },
+        {
+            "No.": 18,
+            "Timestamp": "2024-12-05 13:30:06",
+            "weight": 9.711,
+            "state": "ST"
+        },
+        {
+            "No.": 19,
+            "Timestamp": "2024-12-05 13:30:07",
+            "weight": 9.711,
+            "state": "ST"
+        },
+        {
+            "No.": 20,
+            "Timestamp": "2024-12-05 13:30:08",
+            "weight": 9.823,
+            "state": "US"
+        },
+        {
+            "No.": 21,
+            "Timestamp": "2024-12-05 13:30:09",
+            "weight": 9.821,
+            "state": "ST"
+        },
+        {
+            "No.": 22,
+            "Timestamp": "2024-12-05 13:30:10",
+            "weight": 9.822,
+            "state": "ST"
+        },
+        {
+            "No.": 23,
+            "Timestamp": "2024-12-05 13:30:11",
+            "weight": 9.821,
+            "state": "ST"
+        },
+        {
+            "No.": 24,
+            "Timestamp": "2024-12-05 13:30:12",
+            "weight": 9.821,
+            "state": "ST"
+        }
+    ]
+}
