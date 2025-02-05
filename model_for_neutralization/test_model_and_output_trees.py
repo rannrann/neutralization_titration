@@ -86,15 +86,16 @@ dfs = [pd.read_csv(os.path.join(data_dir, file)) for file in files]
 test_df = pd.concat(dfs, ignore_index=True)
 
 # Ensure test data aligns with training features
-significant_features = ['mean_of_mean_gradient', 'skewness', 'kurtosis', 'mean_gradient_max']
+#'mean_of_mean_gradient'这个参数有问题暂时存疑
+significant_features = ['skewness', 'kurtosis', 'mean_gradient_mean', 'mean_gradient_std', 'mean_gradient_max', 'max_gradient_mean']
 X_test = test_df[significant_features]  # Select only the significant features
 y_test = np.array(labels)  # Actual labels
 
 
 # Load the trained model
-model_name = "model_for_neutralization/model/trained_model_decisiontree_4_parameters_11_samples.joblib"
+model_name = "model_for_neutralization/model/trained_model_randomtree_6_parameters_11_samples.joblib"
 
-test_model(model_name, test_df, X_test, y_test,)
-output_dir = "model_for_neutralization/correct_trees/"
+test_model(model_name, test_df, X_test, y_test)
+output_dir = "model_for_neutralization/correct_trees_with_7_parameters/"
 #output_trees(model_name, output_dir, X_test, y_test)
 

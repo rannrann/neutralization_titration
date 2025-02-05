@@ -1,7 +1,8 @@
 [
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -10,8 +11,9 @@
         "max_gradient":0.010586787
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -20,8 +22,9 @@
         "max_gradient":0.0022158391
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -30,8 +33,9 @@
         "max_gradient":0.0083299138
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -40,8 +44,9 @@
         "max_gradient":0.0053344276
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -50,8 +55,9 @@
         "max_gradient":0.010545753
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -60,8 +66,9 @@
         "max_gradient":0.0129667624
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -70,8 +77,9 @@
         "max_gradient":0.0054985638
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -80,8 +88,9 @@
         "max_gradient":0.0280672959
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -90,8 +99,9 @@
         "max_gradient":0.0191218712
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -100,8 +110,9 @@
         "max_gradient":0.0141977842
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -110,8 +121,9 @@
         "max_gradient":0.0089454247
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -120,8 +132,9 @@
         "max_gradient":0.0052523595
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -130,8 +143,9 @@
         "max_gradient":0.0152236356
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -140,8 +154,9 @@
         "max_gradient":0.0131308986
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -150,8 +165,9 @@
         "max_gradient":0.0060730406
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -160,8 +176,9 @@
         "max_gradient":0.0165777595
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -170,8 +187,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -180,8 +198,9 @@
         "max_gradient":0.0268362741
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -190,8 +209,9 @@
         "max_gradient":0.0178908494
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -200,8 +220,9 @@
         "max_gradient":0.0125564218
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -210,8 +231,9 @@
         "max_gradient":0.0075502667
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -220,8 +242,9 @@
         "max_gradient":0.0023389413
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -230,8 +253,9 @@
         "max_gradient":0.0250307755
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -240,8 +264,9 @@
         "max_gradient":0.0118998769
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -250,8 +275,9 @@
         "max_gradient":0.0188756668
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -260,8 +286,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -270,8 +297,9 @@
         "max_gradient":0.003528929
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -280,8 +308,9 @@
         "max_gradient":0.0082068117
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -290,8 +319,9 @@
         "max_gradient":0.0033647928
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -300,8 +330,9 @@
         "max_gradient":0.0048420189
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -310,8 +341,9 @@
         "max_gradient":0.0005744768
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -320,8 +352,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -330,8 +363,9 @@
         "max_gradient":0.0108329914
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -340,8 +374,9 @@
         "max_gradient":0.0027492819
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -350,8 +385,9 @@
         "max_gradient":0.0038572015
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -360,8 +396,9 @@
         "max_gradient":0.0064013131
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -370,8 +407,9 @@
         "max_gradient":0.0054164957
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -380,8 +418,9 @@
         "max_gradient":0.0011489536
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -390,8 +429,9 @@
         "max_gradient":0.0076733689
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -400,8 +440,9 @@
         "max_gradient":0.0025441116
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -410,8 +451,9 @@
         "max_gradient":0.002133771
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -420,8 +462,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -430,8 +473,9 @@
         "max_gradient":0.0048420189
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -440,8 +484,9 @@
         "max_gradient":0.0082068117
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -450,8 +495,9 @@
         "max_gradient":0.0011079196
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -460,8 +506,9 @@
         "max_gradient":0.0012310217
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -470,8 +517,9 @@
         "max_gradient":0.0014772261
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -480,8 +528,9 @@
         "max_gradient":0.0023799754
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -490,8 +539,9 @@
         "max_gradient":0.0030775544
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -500,8 +550,9 @@
         "max_gradient":0.002133771
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -510,8 +561,9 @@
         "max_gradient":0.0022158391
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -520,8 +572,9 @@
         "max_gradient":0.0014772261
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -530,8 +583,9 @@
         "max_gradient":0.0018465326
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -540,8 +594,9 @@
         "max_gradient":0.003528929
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -550,8 +605,9 @@
         "max_gradient":0.0007796471
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -560,8 +616,9 @@
         "max_gradient":0.0041854739
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -570,8 +627,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -580,8 +638,9 @@
         "max_gradient":0.0031596225
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -590,8 +649,9 @@
         "max_gradient":0.002790316
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -600,8 +660,9 @@
         "max_gradient":0.0009027493
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -610,8 +671,9 @@
         "max_gradient":0.0005334428
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -620,8 +682,9 @@
         "max_gradient":0.0045137464
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -630,8 +693,9 @@
         "max_gradient":0.0017234304
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -640,8 +704,9 @@
         "max_gradient":0.00283135
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -650,8 +715,9 @@
         "max_gradient":0.0010258515
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -660,8 +726,9 @@
         "max_gradient":0.0018465326
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -670,8 +737,9 @@
         "max_gradient":0.0031185884
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -680,8 +748,9 @@
         "max_gradient":0.000697579
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -690,8 +759,9 @@
         "max_gradient":0.0022979073
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -700,8 +770,9 @@
         "max_gradient":0.0068116537
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -710,8 +781,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -720,8 +792,9 @@
         "max_gradient":0.0025441116
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -730,8 +803,9 @@
         "max_gradient":0.0031185884
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -740,8 +814,9 @@
         "max_gradient":0.000738613
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -750,8 +825,9 @@
         "max_gradient":0.0048420189
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -760,8 +836,9 @@
         "max_gradient":0.0
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -770,8 +847,9 @@
         "max_gradient":0.0011489536
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -780,8 +858,9 @@
         "max_gradient":0.0027082478
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -790,8 +869,9 @@
         "max_gradient":0.002092737
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -800,8 +880,9 @@
         "max_gradient":0.0014772261
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -810,8 +891,9 @@
         "max_gradient":0.0025441116
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -820,8 +902,9 @@
         "max_gradient":0.002133771
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -830,8 +913,9 @@
         "max_gradient":0.002790316
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -840,8 +924,9 @@
         "max_gradient":0.000738613
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -850,8 +935,9 @@
         "max_gradient":0.0024620435
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -860,8 +946,9 @@
         "max_gradient":0.0016413623
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -870,8 +957,9 @@
         "max_gradient":0.0036930652
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -880,8 +968,9 @@
         "max_gradient":0.0003282725
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -890,8 +979,9 @@
         "max_gradient":0.0018465326
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -900,8 +990,9 @@
         "max_gradient":0.0012720558
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -910,8 +1001,9 @@
         "max_gradient":0.0015182602
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -920,8 +1012,9 @@
         "max_gradient":0.0029544522
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -930,8 +1023,9 @@
         "max_gradient":0.0005744768
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -940,8 +1034,9 @@
         "max_gradient":0.0050061551
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -950,8 +1045,9 @@
         "max_gradient":0.0031185884
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -960,8 +1056,9 @@
         "max_gradient":0.0013541239
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -970,8 +1067,9 @@
         "max_gradient":0.0023389413
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -980,8 +1078,9 @@
         "max_gradient":0.001395158
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -990,8 +1089,9 @@
         "max_gradient":0.0039392696
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -1000,8 +1100,9 @@
         "max_gradient":0.002790316
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -1010,8 +1111,9 @@
         "max_gradient":0.0018875667
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,
@@ -1020,8 +1122,9 @@
         "max_gradient":0.006319245
     },
     {
-        "absolute_time_point":2.2813559322,
-        "absolute_change":0.7412060302,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.9926253687,
+        "absolute_change":1.0221238938,
         "mean_of_mean_gradient":0.001650484,
         "max_of_max_gradient":0.0280672959,
         "skewness":-0.9680619018,

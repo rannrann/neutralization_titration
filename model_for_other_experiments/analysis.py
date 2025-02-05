@@ -121,15 +121,30 @@ print("----------------------------------------------- 状态切换次数对比-
 powder_switch_counts = [int(sample["state_switches"]) for sample in powder_samples]
 water_switch_counts = [int(sample["state_switches"]) for sample in water_samples]
 
-# 可视化
-plt.bar(range(len(powder_switch_counts)), powder_switch_counts, alpha=0.6, label="Powder")
-plt.bar(range(len(water_switch_counts)), water_switch_counts, alpha=0.6, label="Water", bottom=powder_switch_counts)
-plt.title("State Switch Count Comparison")
-plt.xlabel("Sample Index")
-plt.ylabel("State Switch Count")
-plt.legend()
+# Visualization
+x_positions = range(len(powder_switch_counts))  # x positions for Powder
+x_labels = [str(i + 1) for i in x_positions]  # Increment x-axis labels by 1
+
+plt.figure(figsize=(12, 8))  # Increase figure size for better readability
+
+plt.bar(x_positions, powder_switch_counts, alpha=0.8, color="white", edgecolor="black", label="Powder", hatch="/") 
+plt.bar(x_positions, water_switch_counts, alpha=0.8, color="gray", edgecolor="black", label="Water", bottom=powder_switch_counts) 
+
+# Enlarge text elements
+#plt.title("State Switch Count Comparison", fontsize=16)
+plt.xlabel("Sample Index", fontsize=25)
+plt.ylabel("State Switch Count", fontsize=25)
+
+# Set x-axis ticks to align with each bar and enlarge tick labels
+plt.xticks(ticks=x_positions, labels=x_labels, fontsize=20)
+plt.yticks(fontsize=20)  # Enlarge y-axis tick labels
+
+plt.legend(fontsize=20)  # Enlarge legend text
+plt.grid(axis='y', linestyle='--', alpha=0.6)  # Optional: Add grid lines for clarity
+
 plt.savefig(os.path.join(output_dir, "state_switch_count_comparison.png"))
 plt.close()
+
 # 动态增长速率分析
 print("----------------------------------------------- 动态增长速率分析---------------------------------------")
 plt.figure(figsize=(12, 8))
@@ -168,14 +183,20 @@ water_metrics = pd.DataFrame({
 })
 
 # 绘制每次实验的指标变化
-metrics_to_plot = ["max_weight", "mean_weight", "average_growth_rate", "state_switches"]
+# metrics_to_plot = ["max_weight", "mean_weight", "average_growth_rate", "state_switches"]
+metrics_to_plot = ["average_growth_rate"]
 for metric in metrics_to_plot:
     plt.figure(figsize=(10, 6))
     plt.plot(range(1, 21), powder_metrics[metric], label="Powder", marker="o")
     plt.plot(range(1, 21), water_metrics[metric], label="Water", marker="x", linestyle="dashed")
-    plt.title(f"{metric.capitalize()} Over Experiments")
-    plt.xlabel("Experiment Index")
-    plt.ylabel(metric.replace("_", " ").capitalize())
+    #中間発表用
+    # plt.plot(range(1, 21), powder_metrics[metric], label="Powder", linestyle="solid", color = "black")
+    # plt.plot(range(1, 21), water_metrics[metric], label="Water", linestyle="dashed", color = "black")
+    #plt.title(f"{metric.capitalize()} Over Experiments")
+    plt.xlabel("Experiment Index", fontsize = 25)
+    plt.ylabel(metric.replace("_", " ").capitalize(), fontsize = 25)
+    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=18)
     plt.legend()
     plt.savefig(os.path.join(output_dir, f"{metric}_trend_comparison.png"))
     plt.close()

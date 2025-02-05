@@ -1,7 +1,8 @@
 [
     {
-        "absolute_time_point":0.9545454545,
-        "absolute_change":0.9565217391,
+        "absolute_first_stop_point":null,
+        "absolute_last_stop_point":0.4666666667,
+        "absolute_change":1.0,
         "mean_of_mean_gradient":0.0,
         "max_of_max_gradient":0.0,
         "skewness":-1.3188188162,

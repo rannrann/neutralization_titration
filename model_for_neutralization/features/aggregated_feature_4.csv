@@ -1,2 +1,2 @@
-absolute_time_point,absolute_change,mean_of_mean_gradient,max_of_max_gradient,skewness,kurtosis,mean_gradient_mean,mean_gradient_std,mean_gradient_min,mean_gradient_max,max_gradient_mean,max_gradient_std,max_gradient_min,max_gradient_max
-1.7171717172,0.8284518828,0.0025900331,0.0464527752,-1.4501019664,1.3640974784,0.00259003306097561,0.003049539061994571,0.0,0.0143200284,0.010951234151219512,0.011823500166601579,0.0,0.0464527752
+absolute_first_stop_point,absolute_last_stop_point,absolute_change,mean_of_mean_gradient,max_of_max_gradient,skewness,kurtosis,mean_gradient_mean,mean_gradient_std,mean_gradient_min,mean_gradient_max,max_gradient_mean,max_gradient_std,max_gradient_min,max_gradient_max
+,0.8854166667,1.1380208333,0.0025900331,0.0464527752,-1.4501019664,1.3640974784,0.00259003306097561,0.003049539061994571,0.0,0.0143200284,0.010951234151219512,0.011823500166601579,0.0,0.0464527752

@@ -1,68 +1,38 @@
-import pandas as pd
-import plotly.graph_objects as go
-import json
-import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
-def graph_with_original_index(data_file, anomalies_indexes_file):
-    # 读取数据
-    df = pd.read_csv(data_file, header=None)
-    filtered_df = df.iloc[1:, :5]
-    data = [float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]
+# Create a figure and axis
+fig, ax = plt.subplots(figsize=(8, 6))
 
-    # 读取异常点的索引
-    with open(anomalies_indexes_file, 'r') as file:
-        anomalies_indexes = list(dict.fromkeys(json.load(file)))
-    
-    # 用 None 代替异常值，这样异常值的位置不会显示任何点
-    cleaned_data = [data[i] if i not in anomalies_indexes else None for i in range(len(data))]
+# Draw the digital scale
+scale_body = patches.Rectangle((2, 1), 6, 1, edgecolor='black', facecolor='lightgray')
+ax.add_patch(scale_body)
+ax.text(5, 1.5, 'Digital Scale', fontsize=10, ha='center')
 
-    # 初始化水平线的起点和终点
-    horizontal_lines = []
-    prev_y = None  # 保存上一个非异常点的y值
-    start_x = None  # 保存水平线的起始x点
+# Draw the graduated cylinder on the scale
+cylinder = patches.Rectangle((4, 2), 1, 4, edgecolor='black', facecolor='lightblue')
+ax.add_patch(cylinder)
+ax.text(4.5, 6.2, 'Graduated Cylinder (20 mL)', fontsize=10, ha='center')
 
-    # 遍历数据，查找需要画水平线的区间
-    for i in range(len(data)):
-        if i in anomalies_indexes:
-            # 如果遇到异常点，准备画水平线
-            if prev_y is not None and start_x is None:
-                start_x = i - 1  # 水平线从前一个非异常点的x值开始
-        else:
-            # 如果是正常点
-            if start_x is not None:
-                # 将水平线段添加到 horizontal_lines 中
-                horizontal_lines.append((start_x, i, prev_y))
-                start_x = None  # 重置水平线起点
-            prev_y = data[i]  # 更新上一个非异常点的y值
+# Add water level in the cylinder
+water = patches.Rectangle((4, 2), 1, 2, edgecolor='none', facecolor='blue', alpha=0.5)
+ax.add_patch(water)
+ax.text(4.5, 4.2, 'Water: 10 mL', fontsize=9, ha='center', color='white')
 
-    # 使用 Plotly 绘图
-    fig = go.Figure()
+# Draw the beaker
+beaker = patches.Rectangle((1, 4), 2, 3, edgecolor='black', facecolor='lightblue')
+ax.add_patch(beaker)
+ax.text(2, 7.2, 'Beaker', fontsize=10, ha='center')
 
-    # 添加清理后的数据，保留原始索引
-    fig.add_trace(go.Scatter(x=list(range(len(data))), y=cleaned_data,
-                             mode='lines+markers',  # 显示点和线
-                             marker=dict(size=6),  # 设置点的大小
-                             name='Cleaned Data'))
+# Draw water pouring from the beaker
+ax.plot([2, 4.5], [4, 5], color='blue', linestyle='--', linewidth=1)
+ax.text(2.5, 5.5, 'Pouring Water', fontsize=9, ha='left', color='blue')
 
-    # 添加红色水平线
-    for start, end, y in horizontal_lines:
-        fig.add_trace(go.Scatter(x=[start, end], y=[y, y],
-                                 mode='lines',
-                                 line=dict(color='red', width=2),  # 红色水平线
-                                 showlegend=False))  # 不显示图例
+# Set the axis limits and labels
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 8)
+ax.axis('off')
 
-    # 设置布局
-    fig.update_layout(
-        title='Cleaned Data with Original Index and Red Horizontal Lines',
-        xaxis_title='Original Index',
-        yaxis_title='Data Value',
-        template='plotly_white'
-    )
-
-    # 显示图表
-    fig.show()
-
-# 使用示例
-data_file = 'files/一回目.csv'
-anomalies_indexes_file = 'dataset/stored_data_first.json'
-graph_with_original_index(data_file, anomalies_indexes_file)
+# Title and display
+plt.title('Water Measurement Experiment', fontsize=14)
+plt.show()

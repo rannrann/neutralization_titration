@@ -199,11 +199,13 @@ output_file = "model_for_neutralization/features/combined_features_14.csv"
 combined_df = merge_data(data_dir, files_num, output_file)
 
 statistics_analysis(combined_df)
-significant_features = ['mean_of_mean_gradient', 'skewness', 'kurtosis', 'mean_gradient_max']
+#'skewness', 'kurtosis', 'mean_gradient_std', 'mean_gradient_max'
+#'mean_of_mean_gradient'这个指标有问题 我不想用
+significant_features = ['skewness', 'kurtosis', 'mean_gradient_mean', 'mean_gradient_std', 'mean_gradient_max', 'max_gradient_mean']
 output_route = "model_for_neutralization/model/"
-output_file_name = "trained_model_decisiontree_4_parameters_"
-#model, training_sample_count = randomtree_model_training(significant_features, combined_df, output_route, output_file_name)
-model, training_sample_count = decisiontree_model_training(significant_features, combined_df, output_route, output_file_name)
+output_file_name = "trained_model_randomtree_6_parameters_"
+model, training_sample_count = randomtree_model_training(significant_features, combined_df, output_route, output_file_name)
+#model, training_sample_count = decisiontree_model_training(significant_features, combined_df, output_route, output_file_name)
 
 
 

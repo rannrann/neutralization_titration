@@ -22,7 +22,8 @@ def aggregated_features(file_name, index):
 
     # Add global features
     global_features = [
-        df['absolute_time_point'].iloc[0],
+        df['absolute_first_stop_point'].iloc[0],
+        df['absolute_last_stop_point'].iloc[0],
         df['absolute_change'].iloc[0],
         df['mean_of_mean_gradient'].iloc[0],
         df['max_of_max_gradient'].iloc[0],
@@ -34,7 +35,7 @@ def aggregated_features(file_name, index):
     final_features = np.concatenate([global_features, flattened_aggregated])
 
     # Convert to a DataFrame for a consistent dataset
-    feature_columns = ['absolute_time_point','absolute_change' , 'mean_of_mean_gradient','max_of_max_gradient', 'skewness', 'kurtosis']
+    feature_columns = ['absolute_first_stop_point', 'absolute_last_stop_point', 'absolute_change' , 'mean_of_mean_gradient','max_of_max_gradient', 'skewness', 'kurtosis']
     feature_columns += [f'{col}_{stat}' for col in segment_features for stat in ['mean', 'std', 'min', 'max']]
 
     final_df = pd.DataFrame([final_features], columns=feature_columns)
