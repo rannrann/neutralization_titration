@@ -18,3 +18,4 @@ __pycache__/
 *.tar
 *.gz
 *.h5
+.venv

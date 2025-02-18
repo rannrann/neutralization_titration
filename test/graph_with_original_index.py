@@ -59,9 +59,9 @@ def graph_with_original_index(data_file, anomalies_indexes_file = None):
         yaxis=dict(
             title=dict(
                 text='Weight/g',  # Y轴标题
-                font=dict(size=25)  # Y轴标题字体大小
+                font=dict(size=15)  # Y轴标题字体大小
             ),
-            tickfont=dict(size=25) 
+            tickfont=dict(size=15) 
         ),
         legend=dict(
             x=0.01,  # 图例左对齐到图表的 1% 位置
@@ -69,7 +69,7 @@ def graph_with_original_index(data_file, anomalies_indexes_file = None):
             bgcolor="rgba(255,255,255,0.5)",  # 图例背景半透明
             bordercolor="Black",
             borderwidth=1,
-            font=dict(size=20)  # 图例字体大小
+            font=dict(size=10)  # 图例字体大小
         ),
         template='plotly_white'
     )
@@ -77,9 +77,11 @@ def graph_with_original_index(data_file, anomalies_indexes_file = None):
     # 显示图表
     fig.show()
 
-# 示例文件路径
-data_file = 'files/sample2.csv'
-anomalies_indexes_file = 'dataset/stored_data2.json'
-graph_with_original_index(data_file, anomalies_indexes_file)
-# data_file = 'files/sample48.csv'
-# graph_with_original_index(data_file)
+# For Neutralization titration
+# data_file = 'files/sample2.csv'
+# anomalies_indexes_file = 'dataset/stored_data2.json'
+# graph_with_original_index(data_file, anomalies_indexes_file)
+
+#For other experiment
+data_file = 'files/sample75.csv'
+graph_with_original_index(data_file)
