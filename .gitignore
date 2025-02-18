@@ -1,1 +1,20 @@
-path/to/large-file
+# 忽略 macOS 生成的系统文件
+.DS_Store
+
+# 忽略 Python 虚拟环境
+venv/
+env/
+__pycache__/
+
+# 忽略 Python 依赖库（可通过 requirements.txt 重新安装）
+*.pyc
+*.pyo
+*.pyd
+
+# 忽略大文件
+*.log
+*.sqlite3
+*.zip
+*.tar
+*.gz
+*.h5
