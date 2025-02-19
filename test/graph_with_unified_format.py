@@ -12,27 +12,26 @@ class graph_with_unified_format():
     type: 0 = the water experiment; 1 = the powder experiment
     data_file: the location of raw data 
     """
-    def __init__(self, type, data_file):
+    def __init__(self, type, interval, x_dtick, y_range, data_file):
         df = pd.read_csv(data_file, header=None)
         filtered_df = df.iloc[1:, :5]
         data = [float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]
         self.data = pd.Series(data)
-        self.gradient = np.gradient(self.data)
         self.type = type
         self.output_dir = "graph/united_format/"
+        self.interval = interval
+        self.x_dtick = x_dtick
+        self.y_range = y_range
+        self.gradient = np.gradient(self.data, self.interval)
+        # print("len(self.data) = ", len(self.data))
+        # print("len(self.gradient) = ", len(self.gradient))
+
         
     
     def draw_graph(self):
         self.output_filename = data_file[6:-4] + ".jpg"
-        if self.type == 0:
-            interval = 0.2
-            x_dick = 1
-            y_range = [0, 11]
-        if self.type == 1:
-            x_dick = 10
-            y_range = [0, 6]
-            interval = 1
-        time_intervals = np.arange(0, len(self.data) * interval, interval)
+        time_intervals = np.arange(0, len(self.data) * self.interval, self.interval)
+     
 
 
 
@@ -55,7 +54,7 @@ class graph_with_unified_format():
                 tickfont=dict(size=15),
                 range=[0, max(time_intervals)],  # 设置X轴范围 0~33
                 tickmode="linear",  # 线性刻度
-                dtick=x_dick  # X轴刻度间隔为1
+                dtick=self.x_dtick  # X轴刻度间隔为1
             ),
             yaxis=dict(
                 title=dict(
@@ -63,7 +62,7 @@ class graph_with_unified_format():
                     font=dict(size=15)  # Y轴标题字体大小
                 ),
                 tickfont=dict(size=15),
-                range=y_range,  # 设置Y轴范围 0~11
+                range=self.y_range,  # 设置Y轴范围 0~11
                 tickmode="linear",  # 线性刻度
                 dtick=1  # Y轴刻度间隔为1
             ),
@@ -86,21 +85,14 @@ class graph_with_unified_format():
         
     def draw_gradient_graph(self):
         self.output_filename = data_file[6:-4] + "_gradient.jpg"
-        if self.type == 0:
-            x_range = [0, 320]
-            x_dtick = 1
-            y_range = [0, 11]
-        if self.type == 1:
-            x_range = [0, 150]
-            x_dtick = 1
-            y_range = [0, 2]
+        time_intervals = np.arange(0, len(self.gradient) * self.interval, self.interval)
 
 
         # 使用 Plotly 绘图
         fig = go.Figure()
 
         # 添加清理后的数据，保留原始索引
-        fig.add_trace(go.Scatter(x=list(range(len(self.gradient))), y=self.gradient,
+        fig.add_trace(go.Scatter(x=time_intervals, y=self.gradient,
                                 mode='markers+lines',  # 显示点和线
                                 marker=dict(size=6),  # 设置点的大小
                                 name='Speed Data'))  
@@ -113,9 +105,9 @@ class graph_with_unified_format():
                     font=dict(size=15)  # X轴标题字体大小
                 ),
                 tickfont=dict(size=15),
-                range=x_range,  # 设置X轴范围 0~33
+                range=[0, max(time_intervals)],  # 设置X轴范围 0~33
                 tickmode="linear",  # 线性刻度
-                dtick=x_dtick  # X轴刻度间隔为1
+                dtick=self.x_dtick  # X轴刻度间隔为1
             ),
             yaxis=dict(
                 title=dict(
@@ -123,7 +115,7 @@ class graph_with_unified_format():
                     font=dict(size=15)  # Y轴标题字体大小
                 ),
                 tickfont=dict(size=15),
-                range=y_range,  # 设置Y轴范围 0~11
+                range=self.y_range,  # 设置Y轴范围 0~11
                 tickmode="linear",  # 线性刻度
                 dtick=1  # Y轴刻度间隔为1
             ),
@@ -148,15 +140,19 @@ class graph_with_unified_format():
 # 示例文件路径
 for i in range(75, 95):
     data_file = f'files/sample{i}.csv'
-    g = graph_with_unified_format(0, data_file)
+    interval = 0.2
+    x_dtick = 1
+    #y_range = [0, 11]
+    y_range = [0, 10]
+    g = graph_with_unified_format(0, interval, x_dtick, y_range, data_file)
     '''
     sample25~44, type = 0
         interval = 1
         x_dtick = 1
         y_range = [0,11]
+
     sample45~65, type = 1
         interval = 1
-        x_range = [0, 150]
         x_dtick = 10
         y_range = [0, 2]
         
@@ -166,7 +162,7 @@ for i in range(75, 95):
         x_dtick = 1
         y_range = [0, 11]
     '''
-    g.draw_graph()
-    #g.draw_gradient_graph()
+    #g.draw_graph()
+    g.draw_gradient_graph()
 # data_file = 'files/sample48.csv'
 # graph_with_original_index(data_file)
