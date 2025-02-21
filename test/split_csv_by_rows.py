@@ -24,8 +24,9 @@ def split_csv_by_rows(input_file, output_file_prefix, split_index, start_file_in
         print(f"Saved: {output_file}")
 
 # Example usage
-input_file = 'files/sample75-94.csv'
-split_index = [243, 509, 744, 942, 1157, 1395, 1607, 1790, 1975, 2276, 2494, 2709, 2905, 3109, 3272, 3482, 3632, 3838, 4101, 4265]
+input_file = 'files/sample115-134.csv'
+split_index = [103, 487, 765, 1148, 1571, 1839, 2106, 2491, 2920, 3210, 3665, 4132, 4461, 4831, 5263, 5694, 6068, 6399, 7018, 7340]
+split_index = [i - 1 for i in split_index]
 output_file_prefix = "files/sample"
-start_file_index = 74
+start_file_index = 114
 split_csv_by_rows(input_file, output_file_prefix, split_index, start_file_index)

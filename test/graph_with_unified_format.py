@@ -138,12 +138,12 @@ class graph_with_unified_format():
 
 
 # 示例文件路径
-for i in range(75, 95):
+for i in range(115, 135):
     data_file = f'files/sample{i}.csv'
-    interval = 0.2
+    interval = 0.05
     x_dtick = 1
     #y_range = [0, 11]
-    y_range = [0, 10]
+    y_range = [0, 11]
     g = graph_with_unified_format(0, interval, x_dtick, y_range, data_file)
     '''
     sample25~44, type = 0
