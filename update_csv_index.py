@@ -5,6 +5,6 @@ def update_csv_index(file_path):
     df.iloc[:, 0] = range(1,len(df) + 1)
     df.to_csv(file_path, index=False)
 
-for i in range(115, 135):
+for i in range(174, 195):
     file_path = "files/sample" + str(i) + ".csv"
     update_csv_index(file_path)
