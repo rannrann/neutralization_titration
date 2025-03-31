@@ -138,31 +138,14 @@ class graph_with_unified_format():
 
 
 # 示例文件路径
-for i in range(175, 195):
+#for i in [115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 175, 176, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193]
+for i in range(177, 179):
     data_file = f'files/sample{i}.csv'
     interval = 0.05
-    x_dtick = 1
-    y_range = [0, 13]
-    #y_range = [-10, 10]
-    g = graph_with_unified_format(0, interval, x_dtick, y_range, data_file)
-    '''
-    sample25~44, type = 0
-        interval = 1
-        x_dtick = 1
-        y_range = [0,11]
-
-    sample45~65, type = 1
-        interval = 1
-        x_dtick = 10
-        y_range = [0, 2]
-        
-
-    sample75~94, type=0
-        interval = 0.2
-        x_dtick = 1
-        y_range = [0, 11]
-    '''
+    x_dtick = 0
+    y_range = [0, 12]
+    g = graph_with_unified_format(1, interval, x_dtick, y_range, data_file)
     #g.draw_graph()
     g.draw_gradient_graph()
-# data_file = 'files/sample48.csv'
+# da#ta_file = 'files/sample48.csv'
 # graph_with_original_index(data_file)
