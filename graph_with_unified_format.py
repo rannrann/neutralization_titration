@@ -23,6 +23,7 @@ class graph_with_unified_format():
         self.x_dtick = x_dtick
         self.y_range = y_range
         self.gradient = np.gradient(self.data, self.interval)
+        self.gradient[0] = 0
         # print("len(self.data) = ", len(self.data))
         # print("len(self.gradient) = ", len(self.gradient))
 
@@ -138,13 +139,18 @@ class graph_with_unified_format():
 
 
 # 示例文件路径
-#for i in [115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 175, 176, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193]
-for i in range(177, 179):
-    data_file = f'files/sample{i}.csv'
-    interval = 0.05
+#195 196 197 198 199 200 201
+#for i in range(195, 214): 
+gradient_range = {195: [-3, 3], 196: [-3, 6], 197: [-9, 10], 198: [-1, 7], 199: [-5, 7], 200: [-3, 4],
+        201: [-13, 15], 202: [-3, 5], 203:[-1, 7], 204: [-1, 4], 205: [-7, 8], 206: [-1, 4],
+        207: [-5, 5], 208: [-3, 8], 209: [-1, 5], 210: [-1, 7], 211: [-11, 11], 212: [0, 4], 
+        213: [0, 4]}
+for key, value in gradient_range.items():
+    data_file = f'files/sample{key}.csv'
+    interval = 0.1
     x_dtick = 0
-    y_range = [0, 12]
-    g = graph_with_unified_format(1, interval, x_dtick, y_range, data_file)
+    y_range = value
+    g = graph_with_unified_format(0, interval, x_dtick, y_range, data_file)
     #g.draw_graph()
     g.draw_gradient_graph()
 # da#ta_file = 'files/sample48.csv'

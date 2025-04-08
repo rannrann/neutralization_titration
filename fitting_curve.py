@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
+
+
 # 仮のデータ（ここに実験データを入れる）
 x_data = np.array([...])  # 時間（No.列）
 y_data = np.array([...])  # 重さ（もう一つの列）
