@@ -1,12 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+import pandas as pd
 
-
-
+df = pd.read_csv("files/sample196.csv", header=None)
+filtered_df = df.iloc[1:, :5]
+data = [float(filtered_df.iloc[i, 4]) for i in range(filtered_df.shape[0])]
+y_data = pd.Series(data)
 # 仮のデータ（ここに実験データを入れる）
-x_data = np.array([...])  # 時間（No.列）
-y_data = np.array([...])  # 重さ（もう一つの列）
+x_data = np.array([i*0.1 for i in range(1, 207)])
+print(x_data)
 
 # 対数関数の定義
 def log_func(x, a, b, c, d):
